@@ -4,13 +4,137 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>職旅計畫</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/dog.jpg" style="width: 300px;" alt="cat">
+    <div class="gray-background">
+      <div class="container">
+        <div class="main-btn">
+          <button type="button" class="btn-white">
+            <i class="bi bi-person-circle mr-4"></i>個人資料
+          </button>
+          <button type="button" class="btn-white mx-24">
+            <i class="bi bi-clipboard mr-4"></i>預約紀錄
+          </button>
+          <button type="button" class="btn-gray">
+            <i class="bi bi-journal-text mr-4"></i>職旅計劃
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-10 plan">
+            <div class="plan-card">
+              <div class="plan-title">
+                <h4 class="mb-12">職旅計劃概況</h4>
+                <p>欄位皆為</p>
+              </div>
+              <div class="plan-content">
+                <div class="job mb-24">
+                  <p class="mb-8">目前職業狀態</p>
+                  <input type="radio" name="job" id="btnradio1" class="ml-8" />
+                  <label for="btnradio1" class="mr-24 mb-8">全職上班族</label>
+                  <input type="radio" name="job" id="btnradio2" />
+                  <label for="btnradio2" class="mr-24">兼職工作者</label>
+                  <input type="radio" name="job" id="btnradio3" />
+                  <label for="btnradio3" class="mr-24">自由工作者/接案者</label>
+                  <input type="radio" name="job" id="btnradio4" />
+                  <label for="btnradio4" class="mr-24">數位遊牧者</label>
+                  <br />
+                  <input type="radio" name="job" id="btnradio5" class="ml-8" />
+                  <label for="btnradio5" class="mr-24">創業者/企業主</label>
+                  <input type="radio" name="job" id="btnradio6" />
+                  <label for="btnradio6" class="mr-24">待業中</label>
+                  <input type="radio" name="job" id="btnradio7" />
+                  <label for="btnradio7" class="mr-24">其他</label>
+                </div>
+                <div class="dropdown work mb-24">
+                  <button class="btn dropdown-toggle w-100 text-start d-work py-16" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>工作產業</span>
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                      <a class="dropdown-item" href="#">科技</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">媒體</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">教育</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">金融</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">醫療健康</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">零售製造</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">服務業</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">藝術創意</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">非營利組識</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown work mb-24">
+                  <button class="btn dropdown-toggle w-100 text-start d-work py-16" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>工作年資</span>
+                    <i class="bi bi-chevron-down"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                      <a class="dropdown-item" href="#">1年以下</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">1-3年</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">3-5年</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">5-10年</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">10年以上</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="job mb-24">
+                  <p class="mb-8">月收入區間</p>
+                  <input type="radio" name="job" id="btnradio8" class="ml-8" />
+                  <label for="btnradio8" class="mr-24 mb-8">3萬以下</label>
+                  <input type="radio" name="job" id="btnradio9" />
+                  <label for="btnradio9" class="mr-24">3-5萬</label>
+                  <input type="radio" name="job" id="btnradio10" />
+                  <label for="btnradio10" class="mr-24">5-8萬</label>
+                  <input type="radio" name="job" id="btnradio11" />
+                  <label for="btnradio11" class="mr-24">8-12萬</label>
+                  <input type="radio" name="job" id="btnradio12" />
+                  <label for="btnradio12" class="mr-24">12-20萬</label>
+                  <input type="radio" name="job" id="btnradio13" />
+                  <label for="btnradio13" class="mr-24">20萬以上</label>
+                </div>
+                <div class="form-floating mb-24">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）</label>
+                </div>
+                <p class="work-show">作品案例展示</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
 
