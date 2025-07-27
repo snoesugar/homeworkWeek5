@@ -26,11 +26,12 @@
           </button>
         </div>
         <div class="row">
-          <div class="col-10 plan">
-            <div class="plan-card">
+          <div class="col-10 plan mb-80">
+            <div class="plan-card bb-gray">
               <div class="plan-title">
                 <h4 class="mb-12">職旅計劃概況</h4>
-                <p>欄位皆為</p>
+                <span class="plan-title-small">欄位皆為</span>
+                <span class="badge rounded-pill bg-danger">必填</span>
               </div>
               <div class="plan-content">
                 <div class="job mb-24">
@@ -87,11 +88,20 @@
                   </ul>
                 </div>
                 <div class="dropdown work mb-24">
-                  <button class="btn dropdown-toggle w-100 text-start d-work py-16" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button
+                    class="btn dropdown-toggle w-100 text-start d-work py-16"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     <span>工作年資</span>
                     <i class="bi bi-chevron-down"></i>
                   </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
                     <li>
                       <a class="dropdown-item" href="#">1年以下</a>
                     </li>
@@ -111,25 +121,201 @@
                 </div>
                 <div class="job mb-24">
                   <p class="mb-8">月收入區間</p>
-                  <input type="radio" name="job" id="btnradio8" class="ml-8" />
+                  <input type="radio" name="salary" id="btnradio8" class="ml-8" />
                   <label for="btnradio8" class="mr-24 mb-8">3萬以下</label>
-                  <input type="radio" name="job" id="btnradio9" />
+                  <input type="radio" name="salary" id="btnradio9" />
                   <label for="btnradio9" class="mr-24">3-5萬</label>
-                  <input type="radio" name="job" id="btnradio10" />
+                  <input type="radio" name="salary" id="btnradio10" />
                   <label for="btnradio10" class="mr-24">5-8萬</label>
-                  <input type="radio" name="job" id="btnradio11" />
+                  <input type="radio" name="salary" id="btnradio11" />
                   <label for="btnradio11" class="mr-24">8-12萬</label>
-                  <input type="radio" name="job" id="btnradio12" />
+                  <input type="radio" name="salary" id="btnradio12" />
                   <label for="btnradio12" class="mr-24">12-20萬</label>
-                  <input type="radio" name="job" id="btnradio13" />
+                  <input type="radio" name="salary" id="btnradio13" />
                   <label for="btnradio13" class="mr-24">20萬以上</label>
                 </div>
                 <div class="form-floating mb-24">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                  <label for="floatingTextarea">職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）</label>
+                  <textarea class="form-control" style="height: 160px" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <label class="text-black" for="floatingTextarea">
+                    職業摘要（簡短描述您的專業背景和核心競爭力最多 300字）
+                  </label>
                 </div>
                 <p class="work-show">作品案例展示</p>
+                <div>
+                  <label for="formFile" class="form-label">附件檔案</label>
+                  <br />
+                  <input type="file" id="customFile" hidden />
+                  <label for="customFile" class="btn btn-white">
+                    <i class="bi bi-arrow-bar-up"></i>上傳檔案</label>
+                </div>
               </div>
+            </div>
+            <div class="plan-card bb-gray">
+                <div class="plan-title">
+                  <h4 class="mb-12">職涯規劃</h4>
+                  <span class="plan-title-small">欄位皆為</span>
+                  <span class="badge rounded-pill bg-danger">必填</span>
+                </div>
+                <div class="plan-content">
+                  <div class="form-floating mb-24">
+                    <textarea class="form-control" style="height: 160px; width: 656px;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label class="text-black" for="floatingTextarea">
+                    11 年短期職涯目標（最多 300 字）
+                    </label>
+                  </div>
+                  <div class="form-floating mb-24">
+                    <textarea class="form-control" style="height: 160px; width: 656px;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label class="text-black" for="floatingTextarea">
+                    1-3 年中長期職涯願景（最多 300 字）
+                    </label>
+                  </div>
+                  <div class="job mb-24">
+                    <p class="mb-8">理想工作模式</p>
+                    <input type="radio" name="mode" id="btnradio14" class="ml-8" />
+                    <label for="btnradio14" class="mr-24 mb-8">固定辦公室工作</label>
+                    <input type="radio" name="mode" id="btnradio15" />
+                    <label for="btnradio15" class="mr-24">混合式工作(辦公室+遠端)</label>
+                    <input type="radio" name="mode" id="btnradio16" />
+                    <label for="btnradio16" class="mr-24">完全遠端工作(固定地點)</label>
+                    <br>
+                    <input type="radio" name="mode" id="btnradio17" class="ml-8" />
+                    <label for="btnradio17" class="mr-24">數位遊牧(邊工作邊旅行)</label>
+                    <input type="radio" name="mode" id="btnradio18" />
+                    <label for="btnradio18" class="mr-24">其他(請說明)</label>
+                  </div>
+                  <p class="work-show">目標薪資/收入</p>
+                  <div class="job mb-24">
+                    <p class="mb-8">目前面臨的職涯挑戰</p>
+                    <input type="checkbox" id="btncheckbox1" class="ml-8" />
+                    <label for="btncheckbox1" class="mr-24 mb-8">方向不明確</label>
+                    <input type="checkbox" id="btncheckbox2" />
+                    <label for="btncheckbox2" class="mr-24">技能需要提升</label>
+                    <input type="checkbox" id="btncheckbox3" />
+                    <label for="btncheckbox3" class="mr-24">收入不穩定</label>
+                    <input type="checkbox" id="btncheckbox4" />
+                    <label for="btncheckbox4" class="mr-24">客戶開發困難</label>
+                    <input type="checkbox" id="btncheckbox5" />
+                    <label for="btncheckbox5" class="mr-24">時間管理問題</label>
+                    <br>
+                    <input type="checkbox" id="btncheckbox6" class="ml-8" />
+                    <label for="btncheckbox6" class="mr-24">工作生活失衡</label>
+                    <input type="checkbox" id="btncheckbox7" />
+                    <label for="btncheckbox7" class="mr-24">缺乏人脈資源</label>
+                    <input type="checkbox" id="btncheckbox8" />
+                    <label for="btncheckbox8" class="mr-24">其他(請說明)</label>
+                  </div>
+                  <div class="job mb-24">
+                    <p class="mb-8">期望獲得的協助與資源</p>
+                    <input type="checkbox" id="btncheckbox9" class="ml-8" />
+                    <label for="btncheckbox9" class="mr-24 mb-8">職涯方向指導</label>
+                    <input type="checkbox" id="btncheckbox10" />
+                    <label for="btncheckbox10" class="mr-24">專業技能提升建議</label>
+                    <input type="checkbox" id="btncheckbox11" />
+                    <label for="btncheckbox11" class="mr-24">個人品牌建立</label>
+                    <input type="checkbox" id="btncheckbox12" />
+                    <label for="btncheckbox12" class="mr-24">接案策略與定價</label>
+                    <br>
+                    <input type="checkbox" id="btncheckbox13" class="ml-8" />
+                    <label for="btncheckbox13" class="mr-24">客戶開發方法</label>
+                    <input type="checkbox" id="btncheckbox14" />
+                    <label for="btncheckbox14" class="mr-24">財務規劃</label>
+                    <input type="checkbox" id="btncheckbox15" />
+                    <label for="btncheckbox15" class="mr-24">時間管理系統</label>
+                    <input type="checkbox" id="btncheckbox16" />
+                    <label for="btncheckbox16" class="mr-24">工作生活平衡</label>
+                    <input type="checkbox" id="btncheckbox17" />
+                    <label for="btncheckbox17" class="mr-24">其他(請說明)</label>
+                  </div>
+                  <div class="job mb-24">
+                    <p class="mb-8">感興趣的服務方案</p>
+                    <input type="checkbox" id="btncheckbox9" class="ml-8" />
+                    <label for="btncheckbox9" class="mr-24 mb-8">探索定位</label>
+                    <input type="checkbox" id="btncheckbox10" />
+                    <label for="btncheckbox10" class="mr-24">客製化方案</label>
+                    <input type="checkbox" id="btncheckbox11" />
+                    <label for="btncheckbox11" class="mr-24">實戰指導</label>
+                  </div>
+                </div>
+            </div>
+            <div class="plan-card bb-gray">
+              <div class="plan-title">
+                <h4 class="mb-12">專業技能區塊</h4>
+                <span class="plan-title-small">欄位皆為選填</span>
+              </div>
+              <div class="plan-content">
+                <div class="job mb-24">
+                    <p class="mb-8">核心專業領域</p>
+                    <input type="checkbox" id="btncheckbox9" class="ml-8" />
+                    <label for="btncheckbox9" class="mr-24 mb-8">設計/創意</label>
+                    <input type="checkbox" id="btncheckbox10" />
+                    <label for="btncheckbox10" class="mr-24">設計/創意</label>
+                    <input type="checkbox" id="btncheckbox11" />
+                    <label for="btncheckbox11" class="mr-24">行銷/公關</label>
+                    <input type="checkbox" id="btncheckbox12" />
+                    <label for="btncheckbox12" class="mr-24">內容創作/寫作</label>
+                    <input type="checkbox" id="btncheckbox13" />
+                    <label for="btncheckbox13" class="mr-24">顧問/諮詢</label>
+                    <br>
+                    <input type="checkbox" id="btncheckbox14" class="ml-8" />
+                    <label for="btncheckbox14" class="mr-24">商業/管理</label>
+                    <input type="checkbox" id="btncheckbox15" />
+                    <label for="btncheckbox15" class="mr-24">財務/會計</label>
+                    <input type="checkbox" id="btncheckbox16" />
+                    <label for="btncheckbox16" class="mr-24">教育/培訓</label>
+                    <input type="checkbox" id="btncheckbox17" />
+                    <label for="btncheckbox17" class="mr-24">法律/合規</label>
+                    <input type="checkbox" id="btncheckbox17" />
+                    <label for="btncheckbox17" class="mr-24">健康/醫療</label>
+                  </div>
+                  <div class="form-floating mb-24">
+                    <textarea class="form-control" style="height: 160px; width: 656px;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label class="text-black" for="floatingTextarea">
+                    專業背景和核心競爭力（最多300字）
+                    </label>
+                  </div>
+                  <div class="form-floating mb-24">
+                    <textarea class="form-control" style="height: 160px; width: 656px;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label class="text-black" for="floatingTextarea">
+                    專業技能（最多300字）
+                    </label>
+                  </div>
+                  <div class="form-floating mb-24">
+                    <textarea class="form-control" style="height: 160px; width: 656px;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label class="text-black" for="floatingTextarea">
+                    語文能力（最多300字）
+                    </label>
+                  </div>
+                  <div class="form-floating mb-24">
+                    <textarea class="form-control" style="height: 160px; width: 656px;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label class="text-black" for="floatingTextarea">
+                    資格證照（最多300字）
+                    </label>
+                  </div>
+              </div>
+            </div>
+            <div class="plan-card">
+              <div class="plan-title">
+                <h4 class="mb-12">教育背景</h4>
+                <span class="plan-title-small">欄位皆為選填</span>
+              </div>
+              <div class="plan-content">
+                <div class="form-floating mb-24">
+                    <textarea class="form-control" style="height: 160px; width: 656px;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label class="text-black" for="floatingTextarea">
+                    學歷背景（最多500字）
+                    </label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" style="height: 160px; width: 656px;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label class="text-black" for="floatingTextarea">
+                    專業培訓與工作坊（最多500字）
+                    </label>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mb-48">
+              <button type="button" class="btn-white">匯出 PDF<i class="bi bi-chevron-right ml-4"></i></button>
+              <button type="button" class="btn-black">儲存更新<i class="bi bi-chevron-right ml-4"></i></button>
             </div>
           </div>
         </div>

@@ -10,8 +10,14 @@ $spacers: (
   8: 8px,
   12: 12px, // ➝ 新增 my-12,
   16: 16px,
-  24: 24px
+  24: 24px,
+  48: 48px,
+  80: 80px
 );
+
+.m-auto {
+  margin: 0 auto;
+}
 
 .mr-4 {
   margin-right: 4px;
@@ -19,6 +25,10 @@ $spacers: (
 
 .mr-24 {
   margin-right: 24px;
+}
+
+.ml-4 {
+  margin-left: 4px;
 }
 
 .ml-8 {
