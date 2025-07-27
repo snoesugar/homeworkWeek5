@@ -1,0 +1,20 @@
+.reserve-card {
+  border: 1px solid #d1d9e1;
+  border-radius: 24px;
+  width: calc(33.3333% - 12px);
+  text-align: center;
+  padding: 24px 0px;
+
+  .t-number {
+    color: #4a69e8;
+    font-size: 32px;
+    font-family: 700;
+    line-height: 1.2;
+  }
+  .t-content {
+    color: #667f99;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+  }
+}

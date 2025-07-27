@@ -15,9 +15,6 @@ $spacers: (
   80: 80px
 );
 
-.m-auto {
-  margin: 0 auto;
-}
 
 .mr-4 {
   margin-right: 4px;
@@ -37,6 +34,10 @@ $spacers: (
 
 .d-flex {
   display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
 }
 
 .d-block {
