@@ -6,29 +6,33 @@ body {
 }
 
 /*header*/
-.user span {
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0em;
+.user {
+  text-decoration: none;
+  span {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    color: #141a1f;
+  }
 }
 
 /*footer*/
 .footer p {
   font-size: 14px;
-  color: #667F99;
+  color: #667f99;
   margin-bottom: 0px;
 }
 
 /*職旅計畫*/
 .plan-title {
-  h4{
+  h4 {
     font-weight: 500;
   }
   .plan-title-small {
-    color: #667F99;
+    color: #667f99;
   }
 }
 
 .text-black {
-  color: #141A1F;
+  color: #141a1f;
 }
