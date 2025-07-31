@@ -9,8 +9,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
-    <script type="module" crossorigin src="/homeworkWeek5/assets/main-CzRaIBcv.js"></script>
-    <link rel="stylesheet" crossorigin href="/homeworkWeek5/assets/main-lRZHN549.css">
+    <script type="module" crossorigin src="/homeworkWeek5/assets/main-B0ypHkuC.js"></script>
+    <link rel="stylesheet" crossorigin href="/homeworkWeek5/assets/main-7QiR7Yr9.css">
   </head>
   <body>
     <div class="header-background">
@@ -34,15 +34,15 @@
     <div class="gray-background">
       <div class="container">
         <div class="main-btn">
-          <a href="member.html" class="btn-gray">
+          <button onclick="window.location.href='member.html'" class="btn-gray">
             <i class="bi bi-person-circle mr-4"></i>個人資料
-          </a>
-          <a href="reserve.html" class="btn-white mx-24">
+          </button>
+          <button onclick="window.location.href='reserve.html'" class="btn-white mx-24">
             <i class="bi bi-clipboard mr-4"></i>預約紀錄
-          </a>
-          <a href="index.html" class="btn-white">
+          </button>
+          <button onclick="window.location.href='index.html'" class="btn-white">
             <i class="bi bi-journal-text mr-4"></i>職旅計劃
-          </a>
+          </button>
         </div>
         <div class="row">
           <div class="col-10 plan mb-80">
@@ -129,7 +129,7 @@
 
 <!-- 修改密碼的Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">更新密碼</h5>
@@ -138,14 +138,14 @@
       <div class="modal-body">
         <div class="mb-24">
           <form class="form-floating">
-            <input type="address" class="form-control" id="address" placeholder="請輸入新密碼">
-            <label for="address">新密碼</label>
+            <input type="password" class="form-control" id="password1" placeholder="請輸入新密碼">
+            <label for="password1">新密碼</label>
           </form>
         </div>
         <div class="mb-24">
           <form class="form-floating">
-            <input type="address" class="form-control" id="address" placeholder="請輸入新密碼">
-            <label for="address">再次密碼</label>
+            <input type="password" class="form-control" id="password2" placeholder="請輸入新密碼">
+            <label for="password2">再次密碼</label>
           </form>
         </div>
       </div>

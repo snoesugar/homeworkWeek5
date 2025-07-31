@@ -9,8 +9,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
-    <script type="module" crossorigin src="/homeworkWeek5/assets/main-CzRaIBcv.js"></script>
-    <link rel="stylesheet" crossorigin href="/homeworkWeek5/assets/main-lRZHN549.css">
+    <script type="module" crossorigin src="/homeworkWeek5/assets/main-B0ypHkuC.js"></script>
+    <link rel="stylesheet" crossorigin href="/homeworkWeek5/assets/main-7QiR7Yr9.css">
   </head>
   <body>
     <div class="header-background">
@@ -34,15 +34,15 @@
     <div class="gray-background">
       <div class="container">
         <div class="main-btn">
-          <a href="member.html" class="btn-white">
+          <button onclick="window.location.href='member.html'" class="btn-white">
             <i class="bi bi-person-circle mr-4"></i>個人資料
-          </a>
-          <a href="reserve.html" class="btn-white mx-24">
+          </button>
+          <button onclick="window.location.href='reserve.html'" class="btn-white mx-24">
             <i class="bi bi-clipboard mr-4"></i>預約紀錄
-          </a>
-          <a href="index.html" class="btn-gray">
+          </button>
+          <button onclick="window.location.href='index.html'" class="btn-gray">
             <i class="bi bi-journal-text mr-4"></i>職旅計劃
-          </a>
+          </button>
         </div>
         <div class="row">
           <div class="col-10 plan mb-80">
@@ -159,7 +159,12 @@
                     職業摘要（簡短描述您的專業背景和核心競爭力最多 300字）
                   </label>
                 </div>
-                <p class="work-show">作品案例展示</p>
+                <div class="mb-24">
+                  <form class="form-floating">
+                    <input type="text" class="form-control" id="work-show" placeholder="work-show">
+                    <label class="text-black" for="work-show">作品案例展示</label>
+                  </form>
+                </div>
                 <div>
                   <label for="formFile" class="form-label">附件檔案</label>
                   <br />
