@@ -1,9 +1,18 @@
+/*字體*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@import '../../node_modules/bootstrap/scss/functions';
+
+/*修改變數*/
+@import './helpers/variables';
+
 /*utils*/
 @import './utils/helpers';
 @import './utils/fontStyle';
+@import './utils/mixin';
 
 /*bootstrap*/
-@import "bootstrap/scss/bootstrap"; 
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"; 
 
 /*layout*/
 @import './layout/header.scss';

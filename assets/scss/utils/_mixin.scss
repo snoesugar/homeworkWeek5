@@ -1,0 +1,46 @@
+@media (max-width: 992px) {
+  /*footer*/
+  .footer-content .footer-text {
+    flex-direction: column;
+    padding: 24px 0px;
+  }
+
+  .footer-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      padding: 8px 16px;
+    }
+  }
+
+  /*index*/
+  .row .plan .plan-card {
+    padding: 24px;
+  }
+
+  .main-btn {
+    font-size: 14px;
+    .btn-gray {
+      padding: 12px;
+    }
+    .btn-white {
+      padding: 12px;
+    }
+  }
+
+  .container .main-btn {
+    padding-top: 48px;
+    padding-bottom: 16px;
+  }
+
+  /*member*/
+  .plan-title {
+    margin-bottom: 16px;
+    h4 {
+      font-size: 20px;
+    }
+  }
+}
