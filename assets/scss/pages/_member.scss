@@ -3,20 +3,19 @@
     display: block;
 }
 .head-img {
-    border: 1px solid #D1D9E1;
+    border: 1px solid $Natural-85;
     border-radius: 100px;
     width: 120px;
 }
 
 .upload-btn {
     position: absolute;
-    width: 129px;
     bottom: 0;      /* 貼到底部 */
     cursor: pointer;
 }
 
 .t-gray {
-    color: #667F99;
+    color: $Natural-50;
 }
 
 .custom-modal-body {

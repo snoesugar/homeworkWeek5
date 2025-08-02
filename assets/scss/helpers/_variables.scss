@@ -68,7 +68,7 @@ $colors: (
   "gray": $gray-600,
   "gray-dark": $gray-800,
   "primary": $primary,
-  "secondary": $secondary
+  "secondary": $secondary,
 ) !default;
 // scss-docs-end colors-map
 
@@ -360,6 +360,7 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
+  "disabled": $Natural-60,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -468,6 +469,7 @@ $spacers: (
   10: $spacer * 4.0,  //64px
   11: $spacer * 4.5,  //72px
   12: $spacer * 5.0,  //80px
+  14: 14px,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -592,7 +594,7 @@ $border-widths: (
   1000: 1000px,
 ) !default;
 $border-style: solid !default;
-$border-color: $gray-300 !default;
+$border-color: $Natural-85;//$gray-300 !default; custom
 $border-color-translucent: rgba($black, 0.175) !default;
 // scss-docs-end border-variables
 
@@ -787,8 +789,8 @@ $mark-bg: $yellow-100 !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 // scss-docs-start table-variables
-$table-cell-padding-y: 0.5rem !default;
-$table-cell-padding-x: 0.5rem !default;
+$table-cell-padding-y: 1rem;//0.5rem !default; custom
+$table-cell-padding-x: 0.75rem;//0.5rem !default; custom
 $table-cell-padding-y-sm: 0.25rem !default;
 $table-cell-padding-x-sm: 0.25rem !default;
 
@@ -845,6 +847,7 @@ $table-variants: (
   "danger": shift-color($danger, $table-bg-scale),
   "light": $light,
   "dark": $dark,
+  "natural": $Natural-90, //custom
 ) !default;
 // scss-docs-end table-loop
 

@@ -23,7 +23,7 @@
           </button>
         </div>
         <div class="row">
-          <div class="col-12 col-lg-10 plan mb-lg-12 mb-9">
+          <div class="col-lg-10 plan mb-lg-12 mb-9">
             <div class="plan-card d-lg-flex">
               <div class="plan-title">
                 <h4>個人資料</h4>
@@ -33,7 +33,9 @@
                   <img src="/assets/images/avatar.png" class="head-img" alt="user">
                   <input type="file" id="customFile" hidden />
                   <label for="customFile" class="btn-white upload-btn ms-4">
-                  <i class="bi bi-arrow-bar-up me-1"></i>更新頭貼</label>
+                    <div class="d-inline-flex align-items-center">
+                      <span class="material-symbols-outlined me-1">upload</span>更新頭貼</label>
+                    </div>
                 </div>
                 <div class="mb-4 mb-lg-6">
                   <form class="form-floating">
@@ -58,7 +60,9 @@
                 </div>
                 <div class="mb-4 mb-lg-6">
                   <p class="mb-2">密碼</p>
-                  <button type="button" class="btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal">修改密碼<i class="bi bi-chevron-right ml-4"></i></button>
+                  <button type="button" class="btn-white d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    修改密碼<span class="material-symbols-outlined ms-1 ">chevron_right</span>
+                  </button>
                 </div>
                 <div class="mb-4 mb-lg-6">
                   <form class="form-floating">
@@ -73,7 +77,7 @@
                     <label for="tel">聯絡電話</label>
                   </form>
                 </div>
-                <div class="mb-4 mb-lg-6">
+                <div class="mb-lg-0 mb-7">
                   <form class="form-floating">
                     <input type="address" class="form-control" id="address" placeholder="請輸入地址" value="高雄市三民區九如一路 87 號">
                     <label for="address">通訊地址</label>
@@ -82,8 +86,8 @@
               </div>
             </div>
             <div class="text-center mb-lg-9 d-flex flex-column-reverse d-lg-block p-lg-0 px-3 py-6">
-              <button type="button" class="btn-white me-lg-6">重新填寫<i class="bi bi-chevron-right ms-1"></i></button>
-              <button type="button" class="btn-black mb-lg-0 mb-4">儲存更新<i class="bi bi-chevron-right ms-1"></i></button>
+              <button type="button" class="btn-white me-lg-6 d-inline-flex align-items-center justify-content-center">重新填寫<span class="material-symbols-outlined ms-1 ">chevron_right</span></button>
+              <button type="button" class="btn-black mb-lg-0 mb-4 d-inline-flex align-items-center justify-content-center">儲存更新<span class="material-symbols-outlined ms-1 ">chevron_right</span></button>
             </div>
           </div>
         </div>
@@ -101,13 +105,13 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body custom-modal-body">
-        <div class="mb-6">
+        <div class="mb-6 ">
           <form class="form-floating">
             <input type="password" class="form-control" id="password1" placeholder="請輸入新密碼">
             <label for="passw ord1">新密碼</label>
           </form>
         </div>
-        <div class="mb-6">
+        <div>
           <form class="form-floating">
             <input type="password" class="form-control" id="password2" placeholder="請輸入新密碼">
             <label for="password2">再次密碼</label>

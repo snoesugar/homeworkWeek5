@@ -1,4 +1,8 @@
 @media (max-width: 992px) {
+  /*header*/
+  .logo {
+    width: 92px;
+  }
   /*footer*/
   .footer-content .footer-text {
     flex-direction: column;
@@ -41,6 +45,15 @@
     margin-bottom: 16px;
     h4 {
       font-size: 20px;
+    }
+  }
+
+  /*reserve*/
+  .plan-card .reserve-card {
+    width: 100%;
+    padding: 16px 0px;
+    .t-number {
+      font-size: 28px;
     }
   }
 }
