@@ -5,53 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>個人資料</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
     <div class="gray-background">
-      <div class="container">
+      <div class="container px-6">
         <div class="main-btn">
-          <button onclick="window.location.href='member.html'" class="btn-white">
-            <i class="bi bi-person-circle mr-4"></i>個人資料
+          <button onclick="window.location.href='member.html'" class="btn-white d-inline-flex align-items-center">
+            <span class="material-symbols-outlined me-1">face</span>個人資料
           </button>
-          <button onclick="window.location.href='reserve.html'" class="btn-gray mx-24">
-            <i class="bi bi-clipboard mr-4"></i>預約紀錄
+          <button onclick="window.location.href='reserve.html'" class="btn-gray d-inline-flex align-items-center mx-4 mx-lg-6">
+            <span class="material-symbols-outlined me-1">pending_actions</span>預約紀錄
           </button>
-          <button onclick="window.location.href='index.html'" class="btn-white">
-            <i class="bi bi-journal-text mr-4"></i>職旅計劃
+          <button onclick="window.location.href='index.html'" class="btn-white d-inline-flex align-items-center">
+            <span class="material-symbols-outlined me-1">list_alt</span>職旅計劃
           </button>
         </div>
         <div class="row">
-          <div class="col-10 plan mb-80">
+          <div class="col-10 plan mb-12">
             <div class="plan-card d-block">
-            <h4 class="mb-24">預約紀錄</h4>
-            <div class="mb-48 d-flex flex-between">
+            <h4 class="mb-6">預約紀錄</h4>
+            <div class="mb-9 d-flex flex-between">
               <div class="reserve-card">
-                <p class="t-number mb-8">3</p>
+                <p class="t-number mb-2">3</p>
                 <p class="t-content">已完成諮詢</p>
               </div>
               <div class="reserve-card">
-                <p class="t-number mb-8">2025/10/10</p>
+                <p class="t-number mb-2">2025/10/10</p>
                 <p class="t-content">即將到來</p>
               </div>
               <div class="reserve-card">
-                <p class="t-number mb-8">3/6</p>
+                <p class="t-number mb-2">3/6</p>
                 <p class="t-content">使用方案進度</p>
               </div>
             </div>
-            <div class="d-flex flex-between mb-24">
+            <div class="d-flex flex-between mb-6">
               <div>
                 <button type="button" class="btn-black">全部預約</button>
-                <button type="button" class="btn-white mx-8">已完成</button>
+                <button type="button" class="btn-white mx-2">已完成</button>
                 <button type="button" class="btn-white">已取消</button>
               </div>
               <div class="dropdown">
                 <button class="btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  排序<i class="bi bi-filter ml-4"></i>
+                  排序<i class="bi bi-filter ms-1"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#">新到舊</a></li>
