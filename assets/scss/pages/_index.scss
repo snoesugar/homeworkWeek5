@@ -1,5 +1,5 @@
 .gray-background {
-  background-color: #f0f3f5;
+  background-color: $Natural-95;
 }
 
 .main-btn {
@@ -8,34 +8,34 @@
   padding-top: 80px;
   padding-bottom: 24px;
   a {
-    color: #141A1F;
+    color: $Natural-10;
     text-decoration: none;
   }
 }
 
 .btn-white {
-  background-color: #fcfcfd;
-  border: 1px solid #d1d9e1;
+  background-color: $white;
+  border: 1px solid $Natural-85;
   border-radius: 16px;
   padding: 12px 20px;
 }
 
 .btn-gray {
-  background-color: #e0e5eb;
-  border: 1px solid #d1d9e1;
+  background-color: $Natural-90;
+  border: 1px solid $Natural-85;
   border-radius: 16px;
   padding: 12px 20px;
 }
 
 .btn-black {
   color: white;
-  background-color: #141A1F;
+  background-color: $Natural-10;
   border-radius: 16px;
   padding: 12px 20px;
 }
 
 .plan {
-  background-color: #fcfcfd;
+  background-color: $white;
   border-radius: 24px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
   margin: 0 auto;
@@ -47,17 +47,27 @@
     justify-content: space-between;
   }
   .bb-gray {
-    border-bottom: 1px solid #D1D9E1;
+    border-bottom: 1px solid $Natural-85;
   }
   .plan-title {
-    max-width: 30%;
+    width: 30%;
   }
   .plan-content {
-    min-width: 70%;
+    width: 70%;
   }
 }
+
+.form-floating > label {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
+  line-height: 1.2;
+  padding-top: 1rem;
+}
+
 .work {
-  border: 1px solid #d1d9e1;
+  border: 1px solid $Natural-85;
   border-radius: 8px;
   .d-work{
     display: flex;
@@ -70,5 +80,10 @@
 }
 
 .form-control {
-  background-color: #FCFCFD;
+  background-color: $white;
+}
+
+.textarea-h {
+  min-height: 160px !important;
+  width: 100%;
 }
