@@ -1359,15 +1359,15 @@ $dropdown-box-shadow: var(--#{$prefix}box-shadow) !default;
 
 $dropdown-link-color: var(--#{$prefix}body-color) !default;
 $dropdown-link-hover-color: $dropdown-link-color !default;
-$dropdown-link-hover-bg: var(--#{$prefix}tertiary-bg) !default;
+$dropdown-link-hover-bg: $Natural-90; //var(--#{$prefix}tertiary-bg) !default; custom
 
 $dropdown-link-active-color: $component-active-color !default;
 $dropdown-link-active-bg: $component-active-bg !default;
 
 $dropdown-link-disabled-color: var(--#{$prefix}tertiary-color) !default;
 
-$dropdown-item-padding-y: $spacer * 0.25 !default;
-$dropdown-item-padding-x: $spacer !default;
+$dropdown-item-padding-y: $spacer * 0.5; //$spacer * 0.25 !default; custom
+$dropdown-item-padding-x: $spacer * 1.5; //$spacer !default; custom
 
 $dropdown-header-color: $gray-600 !default;
 $dropdown-header-padding-x: $dropdown-item-padding-x !default;
