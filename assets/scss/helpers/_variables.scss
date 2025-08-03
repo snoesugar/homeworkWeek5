@@ -797,17 +797,14 @@ $table-cell-padding-x-sm: 0.25rem !default;
 $table-cell-vertical-align: top !default;
 
 $table-color: var(--#{$prefix}emphasis-color) !default;
-$table-bg: var(--#{$prefix}body-bg) !default;
+$table-bg: $Natural-90;//var(--#{$prefix}body-bg) !default;
 $table-accent-bg: transparent !default;
 
 $table-th-font-weight: null !default;
 
 $table-striped-color: $table-color !default;
 $table-striped-bg-factor: 0.05 !default;
-$table-striped-bg: rgba(
-  var(--#{$prefix}emphasis-color-rgb),
-  $table-striped-bg-factor
-) !default;
+$table-striped-bg: white;//rgba(var(--#{$prefix}emphasis-color-rgb),$table-striped-bg-factor) !default;
 
 $table-active-color: $table-color !default;
 $table-active-bg-factor: 0.1 !default;
@@ -818,10 +815,7 @@ $table-active-bg: rgba(
 
 $table-hover-color: $table-color !default;
 $table-hover-bg-factor: 0.075 !default;
-$table-hover-bg: rgba(
-  var(--#{$prefix}emphasis-color-rgb),
-  $table-hover-bg-factor
-) !default;
+$table-hover-bg: $primary-90;//rgba(var(--#{$prefix}emphasis-color-rgb),$table-hover-bg-factor) !default;
 
 $table-border-factor: 0.2 !default;
 $table-border-width: var(--#{$prefix}border-width) !default;
