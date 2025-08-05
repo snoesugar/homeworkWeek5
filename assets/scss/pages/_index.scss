@@ -1,89 +1,75 @@
-.gray-background {
-  background-color: $Natural-95;
+.gradient-ball {
+  background: url(/assets/images/index/gradient-ball.png);
+  background-position: center center;
+  background-repeat: no-repeat; /* 不重複 */
+  background-size: contain;
+}
+.index-container {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
-.main-btn {
-  display: flex;
-  justify-content: center;
-  padding-top: 80px;
-  padding-bottom: 24px;
-  a {
-    color: $Natural-10;
-    text-decoration: none;
-  }
-}
-
-.btn-white {
-  background-color: $white;
-  border: 1px solid $Natural-85;
-  border-radius: 16px;
-  padding: 12px 20px;
-}
-
-.btn-gray {
-  background-color: $Natural-90;
-  border: 1px solid $Natural-85;
-  border-radius: 16px;
-  padding: 12px 20px;
-}
-
-.btn-black {
+.card-mark {
   color: white;
-  background-color: $Natural-10;
-  border-radius: 16px;
-  padding: 12px 20px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  top: 12px;
+  left: 12px;
 }
 
-.plan {
-  background-color: $white;
-  border-radius: 24px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
-  margin: 0 auto;
-  .plan-card {
-    margin-left: -12px;
-    margin-right: -12px;
-    padding: 48px;
-    display: block;
-    justify-content: space-between;
-  }
-  .bb-gray {
-    border-bottom: 1px solid $Natural-85;
-  }
-  .plan-title {
-    width: 30%;
-  }
-  .plan-content {
-    width: 70%;
-  }
+.mt-n12 {
+  margin-top: -80px;
 }
 
-.form-floating > label {
-  white-space: normal;
-  overflow: visible;
-  text-overflow: unset;
-  display: block;
-  line-height: 1.2;
-  padding-top: 1rem;
+.h-200 {
+  height: 200px;
 }
 
-.work {
-  border: 1px solid $Natural-85;
-  border-radius: 8px;
-  .d-work{
-    display: flex;
-    justify-content: space-between;
+.why {
+  display: inline-block;
+  color: $primary;
+  background-color: white;
+  border: 2px solid $primary;
+  padding: 12px 18px;
+  border-radius: 12px;
+  .why-arrow {
+    position: absolute;
+    background-color: white;
+    border: 2px solid $primary;
+    width: 28px;
+    height: 28px;
+    transform: rotate(-45deg);
+    left: 41%;
+    border-top: 0;
+    border-right: 0;
   }
 }
 
-.dropdown-toggle::after {
-  display: none; /* 移除預設箭頭 */
+.workWay-mark {
+  position: absolute;
+  background-color: $Natural-95;
+  color: $Natural-50;
+  border-top-right-radius: 12px;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  .material-symbols-outlined {
+    color: $primary;
+  }
 }
 
-.form-control {
-  background-color: $white;
+.adv-vectors {
+  width: 196px;
+  top: -160px;
 }
 
-.textarea-h {
-  min-height: 160px !important;
-  width: 100%;
+.gradient-ball-small {
+  background: url(/assets/images/index/gradient-ball.png);
+  background-size: 48%;
+  background-repeat: no-repeat;
+  background-position: 125% -50%;
+}
+
+.bg-natural-95 {
+  background-color: $Natural-95;
 }

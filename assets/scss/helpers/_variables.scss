@@ -601,9 +601,9 @@ $border-color-translucent: rgba($black, 0.175) !default;
 // scss-docs-start border-radius-variables
 $border-radius: 0.375rem !default;
 $border-radius-sm: 0.25rem !default;
-$border-radius-lg: 0.5rem !default;
+$border-radius-lg: 0.75rem;//0.5rem !default; custom
 $border-radius-xl: 1rem !default;
-$border-radius-xxl: 2rem !default;
+$border-radius-xxl: 1.5rem;//2rem !default; custom
 $border-radius-pill: 50rem !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
@@ -611,7 +611,7 @@ $border-radius-2xl: $border-radius-xxl !default; // Deprecated in v5.3.0
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
-$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+$box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);//0 0.5rem 1rem rgba($black, 0.15) !default; custom
 $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
@@ -686,7 +686,7 @@ $font-weight-bolder: bolder !default;
 $font-weight-base: $font-weight-normal !default;
 
 $line-height-base: 1.5 !default;
-$line-height-sm: 1.25 !default;
+$line-height-sm: 1.2;//1.25 !default; custom
 $line-height-lg: 2 !default;
 
 $h1-font-size: $font-size-base * 2.5 !default;
@@ -1457,7 +1457,7 @@ $card-title-color: null !default;
 $card-subtitle-color: null !default;
 $card-border-width: var(--#{$prefix}border-width) !default;
 $card-border-color: var(--#{$prefix}border-color-translucent) !default;
-$card-border-radius: var(--#{$prefix}border-radius) !default;
+$card-border-radius: 16px;//var(--#{$prefix}border-radius) !default; custom
 $card-box-shadow: null !default;
 $card-inner-border-radius: subtract(
   $card-border-radius,
