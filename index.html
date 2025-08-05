@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>職旅計畫</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <script type="module" crossorigin src="/homeworkWeek5/assets/main-BMkBtMB7.js"></script>
-    <link rel="stylesheet" crossorigin href="/homeworkWeek5/assets/main-lDAJbrVK.css">
+    <script type="module" crossorigin src="/homeworkWeek5/assets/main-yOFmhu9-.js"></script>
+    <link rel="stylesheet" crossorigin href="/homeworkWeek5/assets/main-DpSBClSR.css">
   </head>
   <body>
     <div class="header-background">
@@ -43,439 +43,105 @@
       </div>
     </nav>
 </div>
-    <div class="gray-background">
-      <div class="container px-6">
-        <div class="main-btn">
-          <button onclick="window.location.href='member.html'" class="btn-white d-inline-flex align-items-center">
-            <span class="material-symbols-outlined me-1">face</span>個人資料
-          </button>
-          <button onclick="window.location.href='reserve.html'" class="btn-white d-inline-flex align-items-center mx-4 mx-lg-6">
-            <span class="material-symbols-outlined me-1">pending_actions</span>預約紀錄
-          </button>
-          <button onclick="window.location.href='index.html'" class="btn-gray d-inline-flex align-items-center">
-            <span class="material-symbols-outlined me-1">list_alt</span>職旅計劃
-          </button>
-        </div>
-        <div class="row">
-          <div class="col-lg-10 plan mb-lg-12 mb-9">
-            <div class="plan-card bb-gray d-lg-flex">
-              <div class="plan-title d-lg-block d-flex justify-content-between"> 
-                <h4 class="mb-lg-3 mb-0">職旅計劃概況</h4>
-                <div class="d-flex align-items-center">
-                  <span class="plan-title-small">欄位皆為</span>
-                  <span class="badge rounded-pill bg-danger ms-1">必填</span>
-                </div>
+  <!--第一張-->
+  <div class="gradient-ball">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 m-auto text-center">
+          <div class="mt-12 mb-8">
+            <h2 class="display-1 fw-bold">一起陪伴、探索</h2>
+            <h2 class="display-1 fw-bold mb-6">還有你那些未完成的夢</h2>
+            <div class="d-flex justify-content-between text-start">
+              <div>
+                <p class="fs-6 mb-0 t-gray">自由工作很美，也很難。</p>
+                <p class="fs-6 mb-0 t-gray">我們用 1 對 1 陪伴，陪你從第一步開始，直到夢想變成日常</p>
               </div>
-              <div class="plan-content">
-                <div class="mb-lg-6 mb-4">
-                  <p class="mb-2">目前職業狀態</p>
-                  <div class="d-flex flex-wrap gap-2 ms-2">
-                    <div>
-                      <input type="radio" name="job" id="btnradio1" />
-                      <label for="btnradio1" class="me-lg-4 me-2">全職上班族</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="job" id="btnradio2" />
-                      <label for="btnradio2" class="me-lg-4 me-2">兼職工作者</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="job" id="btnradio3" />
-                      <label for="btnradio3" class="me-lg-4 me-2">自由工作者/接案者</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="job" id="btnradio4" />
-                      <label for="btnradio4" class="me-lg-4 me-2">數位遊牧者</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="job" id="btnradio5" />
-                      <label for="btnradio5" class="me-lg-4 me-2">創業者/企業主</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="job" id="btnradio6" />
-                      <label for="btnradio6" class="me-lg-4 me-2">待業中</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="job" id="btnradio7" />
-                      <label for="btnradio7" class="me-lg-4 me-2">其他</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="dropdown work mb-lg-6 mb-4">
-                  <button class="btn dropdown-toggle w-100 text-start d-work py-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span>工作產業</span>
-                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                  </button>
-                  <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
-                    <li>
-                      <a class="dropdown-item" href="#">科技</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">媒體</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">教育</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">金融</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">醫療健康</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">零售製造</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">服務業</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">藝術創意</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">非營利組識</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="dropdown work mb-lg-6 mb-4">
-                  <button
-                    class="btn dropdown-toggle w-100 text-start d-work py-4"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <span>工作年資</span>
-                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                  </button>
-                  <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
-                    <li>
-                      <a class="dropdown-item" href="#">1年以下</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">1-3年</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">3-5年</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">5-10年</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">10年以上</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="mb-lg-6 mb-4">
-                  <p class="mb-2">月收入區間</p>
-                  <div class="d-flex flex-wrap gap-2 ms-2">
-                    <div>
-                      <input type="radio" name="salary" id="btnradio8" />
-                      <label for="btnradio8" class="me-lg-4 me-2">3萬以下</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="salary" id="btnradio9" />
-                      <label for="btnradio9" class="me-lg-4 me-2">3-5萬</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="salary" id="btnradio10" />
-                      <label for="btnradio10" class="me-lg-4 me-2">5-8萬</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="salary" id="btnradio11" />
-                      <label for="btnradio11" class="me-lg-4 me-2">8-12萬</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="salary" id="btnradio12" />
-                      <label for="btnradio12" class="me-lg-4 me-2">12-20萬</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="salary" id="btnradio13" />
-                      <label for="btnradio13" class="me-lg-4 me-2">20萬以上</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-floating mb-6">
-                  <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                  <label class="text-black" for="floatingTextarea">
-                    職業摘要（簡短描述您的專業背景和核心競爭力最多 300字）
-                  </label>
-                </div>
-                <div class="mb-lg-6 mb-4">
-                  <form class="form-floating">
-                    <input type="text" class="form-control" id="work-show" placeholder="work-show">
-                    <label class="text-black" for="work-show">作品案例展示</label>
-                  </form>
-                </div>
-                <div>
-                  <label for="formFile" class="form-label">附件檔案</label>
-                  <br />
-                  <input type="file" id="customFile" hidden />
-                  <label for="customFile" class="btn btn-white">
-                    <div class="d-inline-flex align-items-center">
-                      <span class="material-symbols-outlined me-1">upload</span>上傳檔案</label>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="plan-card bb-gray d-lg-flex">
-              <div class="plan-title d-lg-block d-flex justify-content-between"> 
-                <h4 class="mb-lg-3 mb-0">職涯規劃</h4>
-                <div class="d-flex align-items-center">
-                  <span class="plan-title-small">欄位皆為</span>
-                  <span class="badge rounded-pill bg-danger ms-1">必填</span>
-                </div>
-              </div>
-                <div class="plan-content">
-                  <div class="form-floating mb-lg-6 mb-4">
-                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label class="text-black" for="floatingTextarea">
-                    1 年短期職涯目標（最多 300 字）
-                    </label>
-                  </div>
-                  <div class="form-floating mb-lg-6 mb-4">
-                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label class="text-black" for="floatingTextarea">
-                    1-3 年中長期職涯願景（最多 300 字）
-                    </label>
-                  </div>
-                  <div class="mb-lg-6 mb-4">
-                    <p class="mb-2">理想工作模式</p>
-                    <div class="d-flex flex-wrap gap-2 ms-2">
-                      <div>
-                        <input type="radio" name="mode" id="btnradio14" />
-                        <label for="btnradio14" class="me-lg-4 me-2">固定辦公室工作</label>
-                      </div>
-                      <div>
-                        <input type="radio" name="mode" id="btnradio15" />
-                        <label for="btnradio15" class="me-lg-4 me-2">混合式工作(辦公室+遠端)</label>
-                      </div>
-                      <div>
-                        <input type="radio" name="mode" id="btnradio16" />
-                        <label for="btnradio16" class="me-lg-4 me-2">完全遠端工作(固定地點)</label>
-                      </div>
-                      <div>
-                        <input type="radio" name="mode" id="btnradio17" />
-                        <label for="btnradio17" class="me-lg-4 me-2">數位遊牧(邊工作邊旅行)</label>
-                      </div>
-                      <div>
-                        <input type="radio" name="mode" id="btnradio18" />
-                        <label for="btnradio18" class="me-lg-4 me-2">其他(請說明)</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-lg-6 mb-4">
-                    <form class="form-floating">
-                      <input type="text" class="form-control" id="salary-show" placeholder="work-show">
-                      <label class="text-black" for="salary-show">目標薪資/收入</label>
-                    </form>
-                  </div>
-                  <div class="mb-lg-6 mb-4">
-                    <p class="mb-2">目前面臨的職涯挑戰</p>
-                    <div class="d-flex flex-wrap gap-2">
-                      <div>
-                        <input type="checkbox" id="btncheckbox1" />
-                        <label for="btncheckbox1" class="me-lg-4 me-2">方向不明確</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox2" />
-                        <label for="btncheckbox2" class="me-lg-4 me-2">技能需要提升</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox3" />
-                        <label for="btncheckbox3" class="me-lg-4 me-2">收入不穩定</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox4" />
-                        <label for="btncheckbox4" class="me-lg-4 me-2">客戶開發困難</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox5" />
-                        <label for="btncheckbox5" class="me-lg-4 me-2">時間管理問題</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox6" />
-                        <label for="btncheckbox6" class="me-lg-4 me-2">工作生活失衡</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox7" />
-                        <label for="btncheckbox7" class="me-lg-4 me-2">缺乏人脈資源</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox8" />
-                        <label for="btncheckbox8" class="me-lg-4 me-2">其他(請說明)</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-lg-6 mb-4">
-                    <p class="mb-2">期望獲得的協助與資源</p>
-                    <div class="d-flex flex-wrap gap-2">
-                      <div>
-                        <input type="checkbox" id="btncheckbox9" />
-                        <label for="btncheckbox9" class="me-lg-4 me-2">職涯方向指導</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox10" />
-                        <label for="btncheckbox10" class="me-lg-4 me-2">專業技能提升建議</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox11" />
-                        <label for="btncheckbox11" class="me-lg-4 me-2">個人品牌建立</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox12" />
-                        <label for="btncheckbox12" class="me-lg-4 me-2">接案策略與定價</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox13" />
-                        <label for="btncheckbox13" class="me-lg-4 me-2">客戶開發方法</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox14" />
-                        <label for="btncheckbox14" class="me-lg-4 me-2">財務規劃</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox15" />
-                        <label for="btncheckbox15" class="me-lg-4 me-2">時間管理系統</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox16" />
-                        <label for="btncheckbox16" class="me-lg-4 me-2">工作生活平衡</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox17" />
-                        <label for="btncheckbox17" class="me-lg-4 me-2">其他(請說明)</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-lg-6 mb-0">
-                    <p class="mb-2">感興趣的服務方案</p>
-                    <div class="d-flex flex-wrap gap-2">
-                      <div>
-                        <input type="checkbox" id="btncheckbox18" />
-                        <label for="btncheckbox18" class="me-lg-4 me-2">探索定位</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox19" />
-                        <label for="btncheckbox19" class="me-lg-4 me-2">客製化方案</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox20" />
-                        <label for="btncheckbox20" class="me-lg-4 me-2">實戰指導</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="plan-card bb-gray d-lg-flex">
-              <div class="plan-title d-lg-block d-flex justify-content-between"> 
-                <h4 class="mb-lg-3 mb-0">專業技能區塊</h4>
-                <div class="d-flex align-items-center">
-                  <span class="plan-title-small">欄位皆為選填</span>
-                </div>
-              </div>
-              <div class="plan-content">
-                <div class="mb-lg-6 mb-4">
-                    <p class="mb-2">核心專業領域</p>
-                    <div class="d-flex flex-wrap gap-2">
-                      <div>
-                        <input type="checkbox" id="btncheckbox21" />
-                        <label for="btncheckbox21" class="me-lg-4 me-2">設計/創意</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox22" />
-                        <label for="btncheckbox22" class="me-lg-4 me-2">科技/程式開發</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox23" />
-                        <label for="btncheckbox23" class="me-lg-4 me-2">行銷/公關</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox24" />
-                        <label for="btncheckbox24" class="me-lg-4 me-2">內容創作/寫作</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox25" />
-                        <label for="btncheckbox25" class="me-lg-4 me-2">顧問/諮詢</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox26" />
-                        <label for="btncheckbox26" class="me-lg-4 me-2">商業/管理</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox27" />
-                        <label for="btncheckbox27" class="me-lg-4 me-2">財務/會計</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox28" />
-                        <label for="btncheckbox28" class="me-lg-4 me-2">教育/培訓</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox29" />
-                        <label for="btncheckbox29" class="me-lg-4 me-2">法律/合規</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btncheckbox30" />
-                        <label for="btncheckbox30" class="me-lg-4 me-2">健康/醫療</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-floating mb-lg-6 mb-4">
-                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label class="text-black" for="floatingTextarea">
-                    專業背景和核心競爭力（最多300字）
-                    </label>
-                  </div>
-                  <div class="form-floating mb-lg-6 mb-4">
-                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label class="text-black" for="floatingTextarea">
-                    專業技能（最多300字）
-                    </label>
-                  </div>
-                  <div class="form-floating mb-lg-6 mb-4">
-                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label class="text-black" for="floatingTextarea">
-                    語文能力（最多300字）
-                    </label>
-                  </div>
-                  <div class="form-floating mb-lg-6">
-                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label class="text-black" for="floatingTextarea">
-                    資格證照（最多300字）
-                    </label>
-                  </div>
-              </div>
-            </div>
-            <div class="plan-card d-lg-flex">
-              <div class="plan-title d-lg-block d-flex justify-content-between"> 
-                <h4 class="mb-lg-3 mb-0">教育背景 </h4>
-                <div class="d-flex align-items-center">
-                  <span class="plan-title-small">欄位皆為選填</span>
-                </div>
-              </div>
-              <div class="plan-content">
-                <div>
-                  <div class="form-floating mb-lg-6 mb-4">
-                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="edu"></textarea>
-                    <label class="text-black" for="edu">
-                    學歷背景（最多500字）
-                    </label>
-                  </div>
-                  <div class="form-floating">
-                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="training"></textarea>
-                    <label class="text-black" for="training">
-                    專業培訓與工作坊（最多500字）
-                    </label>
-                  </div>
-                </div>  
-              </div>
-            </div>
-            <div class="text-center mb-lg-9 d-flex flex-column-reverse d-lg-block p-lg-0 px-3 py-6">
-              <button type="button" class="btn-white me-lg-6 d-inline-flex align-items-center justify-content-center">匯出 PDF<span class="material-symbols-outlined ms-1 ">chevron_right</span></button>
-              <button type="button" class="btn-black mb-lg-0 mb-4 d-inline-flex align-items-center justify-content-center">儲存更新<span class="material-symbols-outlined ms-1 ">chevron_right</span></button>
+              <button type="button" class="bg-secondary d-inline-flex align-items-center justify-content-center border-0 rounded-4 fs-4 fw-bold lh-sm py-4 ps-5 pe-3">開始你的職旅<span class="material-symbols-outlined ms-1">chevron_right</span></button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="index-container mb-12">
+      <div class="row">
+        <div class="col-4">
+          <img src="/homeworkWeek5/assets/hero-1-7HLL7KFx.png" class="img-fluid" alt="hero-1">
+        </div>
+        <div class="col-4">
+          <div class="d-flex flex-column justify-content-between h-100">
+            <img src="/homeworkWeek5/assets/hero-2-DD8Hkiv3.png" class="img-fluid" alt="hero-2">
+            <img src="/homeworkWeek5/assets/hero-3-wmFQiUUr.png" class="img-fluid" alt="hero-3">
+          </div>
+        </div>
+        <div class="col-4">
+          <img src="/homeworkWeek5/assets/hero-4-3WllqM98.png" class="img-fluid" alt="hero-4">
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <!--第2張-->
+  <div class="bg-white overflow-x-hidden position-relative z-1 pt-12">
+    <div class="container ">
+      <div class="row d-flex flex-nowrap">
+        <div class="col-4 d-flex flex-column justify-content-center">
+          <div>
+            <img src="data:image/svg+xml,%3csvg%20width='96'%20height='84'%20viewBox='0%200%2096%2084'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M74.1289%208.19861C86.2078%208.19861%2095.9999%2017.9986%2096%2030.0873V54.3353L95.998%2054.6371C95.9179%2060.552%2093.491%2065.9027%2089.6133%2069.7933V82.0004H87.0967C86.119%2082.0003%2085.0865%2081.719%2084.167%2081.3842C83.2024%2081.0328%2082.1563%2080.5446%2081.0918%2079.975C79.2139%2078.97%2077.1625%2077.6477%2075.2236%2076.1957C74.9491%2076.2094%2074.673%2076.2187%2074.3955%2076.222L74.1289%2076.224H60C54.8961%2076.2239%2050.2015%2074.4723%2046.4805%2071.5394C47.9663%2070.5009%2049.2118%2069.2986%2050.2256%2068.057C52.9816%2070.0269%2056.3552%2071.1868%2060%2071.1869H74.1289L74.334%2071.1859C74.8114%2071.1801%2075.2852%2071.1546%2075.7539%2071.1097L76.75%2071.014L77.5391%2071.6293C79.5009%2073.1587%2081.6153%2074.5443%2083.4639%2075.5336C83.8555%2075.7432%2084.2296%2075.9309%2084.5811%2076.097V67.5961L85.4102%2066.8461C86.805%2065.5853%2087.9865%2064.0951%2088.8975%2062.4359H66V57.2054H90.7246C90.8718%2056.3467%2090.9547%2055.4658%2090.9668%2054.5677L90.9678%2054.3353V50.4261H71.8066V45.1967H90.9678V38.4164H77.0332V33.1869H90.9678V30.0873C90.9677%2020.7801%2083.4286%2013.2347%2074.1289%2013.2347H60C59.8871%2013.2347%2059.7745%2013.2364%2059.6621%2013.2386C59.1363%2011.5113%2058.4152%209.86934%2057.5244%208.33826C58.337%208.24662%2059.163%208.19862%2060%208.19861H74.1289Z'%20fill='%23141A1F'/%3e%3cpath%20d='M36.5801%202C46.2723%202%2054.3644%208.85589%2056.2793%2017.9863C59.0886%2027.4206%2062.3061%2044.2399%2062.3223%2044.3242H52.4512V49.5547H43.1611C43.1612%2052.7508%2046.3763%2057.1387%2050.6143%2057.1387C50.6143%2060.6253%2045.7158%2069.6024%2035.0322%2069.6025H20.1289C9.01212%2069.6025%200.000168115%2060.5838%200%2049.458V22.1455C0%2011.0196%209.01202%202%2020.1289%202H36.5801ZM42.9668%2024.4697C40.8291%2024.4699%2039.0967%2026.2043%2039.0967%2028.3438C39.0967%2030.4832%2040.8291%2032.2176%2042.9668%2032.2178C45.1047%2032.2178%2046.8379%2030.4834%2046.8379%2028.3438C46.8378%2026.2042%2045.1046%2024.4697%2042.9668%2024.4697Z'%20fill='%234A69E8'/%3e%3c/svg%3e" alt="logo-icon">
+            <h3 class="display-5 fw-bold mb-0">他們已經踏上職旅</h3>
+            <h3 class="display-5 fw-bold">聽聽他們的故事</h3>
+            <p class="fs-6 t-gray">每一段職涯轉型都有獨特挑戰，這些曾經與你有相同疑惑的夥伴，現在正過著他們嚮往的生活</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow h-100 position-relative z-2">
+            <img src="/homeworkWeek5/assets/story-cover-1-Bn7anPV1.png" class="card-img-top position-relative" alt="story-cover-1">
+            <div class="card-mark bg-primary position-absolute">數位遊牧 2 年</div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-4">轉型成功的設計師</h5>
+              <p class="card-text t-gray fs-8">從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。</p>
+              <span class="fw-bold border-end pe-2">視覺設計師</span>
+              <span class="fs-8 ps-2">郭敏迪 (34y)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow h-100 position-relative z-2">
+            <img src="/homeworkWeek5/assets/story-cover-2-CWUZyQXo.png" class="card-img-top position-relative" alt="story-cover-2">
+            <div class="card-mark bg-primary position-absolute">數位遊牧 2 年</div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-4">數位遊牧生活實踐者</h5>
+              <p class="card-text t-gray fs-8">兩年前我只想環遊世界，卻不知道怎麼開始。職旅給了我遠端工作與生活規劃的指導。現在我在五個國家工作過，收入比以前多 20%。每次打開電腦，看見窗外不同的風景，都慶幸當初那一個決定。</p>
+              <span class="fw-bold border-end pe-2">內容策略師</span>
+              <span class="fs-8 ps-2">林雨潔 (29y)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow h-100 position-relative z-2">
+            <img src="/homeworkWeek5/assets/story-cover-3-BUqkWZaw.png" class="card-img-top position-relative" alt="story-cover-3">
+            <div class="card-mark bg-primary position-absolute">數位遊牧 3 年</div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold mb-4">中年轉型的工程師</h5>
+              <p class="card-text t-gray fs-8">59 歲被裁員時，我以為職涯結束了。職旅顧問不只幫我轉職，更讓我相信自己還有價值。現在我每月穩定接案、收入翻倍。年齡不是限制，只是我還沒找到對的方向。</p>
+              <div class="mt-auto">
+                <span class="fw-bold border-end pe-2">系統架構顧問</span>
+                <span class="fs-8 ps-2">張世明 (62y) </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gray-background h-200 position-relative mt-n12 z-0"></div>
+  </div>
 
+  <!--第3張-->
+  <div class="gray-background">
+    <span>為什麼</span>
+    <h4 class="display-5 fw-bold">選擇職旅 WorkWay</h4>
+  </div>
+
+  
     <div class="footer-content">
   <div class="container">
     <div class="footer-text">
@@ -490,6 +156,6 @@
     </div>
   </div>
 </div>
-
+
   </body>
 </html>
