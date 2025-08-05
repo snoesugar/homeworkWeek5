@@ -26,23 +26,30 @@
 }
 
 .why {
+  position: relative;
   display: inline-block;
   color: $primary;
   background-color: white;
+  font-size: 20px;
   border: 2px solid $primary;
   padding: 12px 18px;
   border-radius: 12px;
-  .why-arrow {
-    position: absolute;
-    background-color: white;
-    border: 2px solid $primary;
-    width: 28px;
-    height: 28px;
-    transform: rotate(-45deg);
-    left: 41%;
-    border-top: 0;
-    border-right: 0;
-  }
+  z-index: 2;
+}
+
+.why .why-arrow {
+  position: absolute;
+  background-color: white;
+  border: 2px solid $primary;
+  width: 28px;
+  height: 28px;
+  transform: rotate(-45deg);
+  left: 40%;
+  top: 100%; /* 貼到底部 */
+  margin-top: -17px; /* 向上推半個高度 */
+  border-top: 0;
+  border-right: 0;
+  z-index: 1;
 }
 
 .workWay-mark {
@@ -72,4 +79,35 @@
 
 .bg-natural-95 {
   background-color: $Natural-95;
+}
+
+//第5張
+.sp-w160 {
+  width: 160px;
+}
+
+.sp-step {
+  display: inline-block;
+  color: $primary;
+  background-color: $Natural-95;
+  padding: 10.5px 16px;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.sp-rl {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+//第6張
+.bg-grid {
+  background: url(/assets/images/index/bg-grid.png);
+  background-repeat: repeat;
+  //不知道要不要縮小
+}
+
+.accordion-button {
+  border-bottom: 1px dotted $Natural-85;
 }
