@@ -1,3 +1,4 @@
+//第1張
 .gradient-ball {
   background: url(/assets/images/index/gradient-ball.png);
   background-position: center center;
@@ -9,6 +10,7 @@
   padding-right: 12px;
 }
 
+//第2張
 .card-mark {
   color: white;
   padding: 8px 16px;
@@ -25,6 +27,7 @@
   height: 200px;
 }
 
+//第3張
 .why {
   position: relative;
   display: inline-block;
@@ -52,6 +55,51 @@
   z-index: 1;
 }
 
+.work-hover-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden; /* 保證偽元素不會超出 */
+}
+
+/* 黑色遮罩 */
+.work-hover-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 文字 */
+.overlay-text {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 88%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* 滑鼠移到圖片範圍時，同時出現遮罩與文字 */
+.work-hover-wrap:hover::after,
+.work-hover-wrap:hover .overlay-text {
+  opacity: 1;
+}
+
+.work-hover-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0; /* 保證遮罩能蓋在圖片上 */
+}
+
 .workWay-mark {
   position: absolute;
   background-color: $Natural-95;
@@ -59,7 +107,7 @@
   border-top-right-radius: 12px;
   left: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 3;
   .material-symbols-outlined {
     color: $primary;
   }
@@ -70,6 +118,7 @@
   top: -160px;
 }
 
+//第4張
 .gradient-ball-small {
   background: url(/assets/images/index/gradient-ball.png);
   background-size: 48%;
@@ -111,3 +160,5 @@
 .accordion-button {
   border-bottom: 1px dotted $Natural-85;
 }
+
+//下拉式選單還沒做一開一關
