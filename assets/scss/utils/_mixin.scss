@@ -20,7 +20,7 @@
     }
   }
 
-  /*index*/
+  /*career*/
   .row .plan .plan-card {
     padding: 24px;
   }
@@ -60,5 +60,40 @@
     .t-number {
       font-size: 28px;
     }
+  }
+
+  /*index*/
+  /*第3張*/
+  .why.fw-bold {
+    font-size: 18px;
+  }
+}
+
+/*中斷點*/
+@media (min-width: 992px) {
+  /*index*/
+  .display-6.display-lg-1 {
+    font-size: 80px;
+  }
+
+  .display-6.display-lg-5 {
+    font-size: 48px;
+  }
+  /*第2張*/
+  .mt-n152.mt-lg-n12 {
+    margin-top: -80px;
+  }
+
+  /*privacy*/
+  .fs-lg-2.fs-3 {
+    font-size: 32px !important;
+  }
+
+  .fs-lg-7.fs-8 {
+    font-size: 16px !important;
+  }
+
+  .fs-lg-5.fs-6 {
+    font-size: 20px !important;
   }
 }

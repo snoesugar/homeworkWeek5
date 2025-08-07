@@ -19,12 +19,16 @@
   left: 12px;
 }
 
-.mt-n12 {
-  margin-top: -80px;
+.mt-n152 {
+  margin-top: -152px;
 }
 
 .h-200 {
   height: 200px;
+}
+
+.logo-sm img{
+  width: 48px;
 }
 
 //第3張
@@ -49,7 +53,7 @@
   transform: rotate(-45deg);
   left: 40%;
   top: 100%; /* 貼到底部 */
-  margin-top: -17px; /* 向上推半個高度 */
+  margin-top: -12px; /* 向上推半個高度 */
   border-top: 0;
   border-right: 0;
   z-index: 1;
