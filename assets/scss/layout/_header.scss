@@ -48,5 +48,8 @@
 }
 
 .register-img {
-  
+  display: block;     /* 去掉底部空白 */
+  width: 100%;        /* 撐滿整個 col-7 */
+  height: 100%;      /* 跟 .login-h770 一樣高 */
+  object-fit: cover;  /* 圖片裁切填滿 */
 }

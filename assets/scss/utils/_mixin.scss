@@ -97,3 +97,13 @@
     font-size: 20px !important;
   }
 }
+
+/*login*/
+@media (max-width: 1024px) {
+  .col-lg-5.login-py {
+    padding-right: 36px;
+  }
+  .col-lg-5.register-py {
+    padding-left: 36px;
+  }
+}
