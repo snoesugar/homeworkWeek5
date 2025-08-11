@@ -98,12 +98,20 @@
   }
 }
 
-/*login*/
+
 @media (max-width: 1024px) {
+  /*login*/
   .col-lg-5.login-py {
     padding-right: 36px;
   }
   .col-lg-5.register-py {
     padding-left: 36px;
+  }
+
+  /*service*/
+  .bg-dot.text-center {
+    background-image: url(/assets/images/service/banner-bg.png);
+    background-size: 50% auto; /* 改這裡 */
+    background-repeat: repeat; /* 避免重複 */
   }
 }

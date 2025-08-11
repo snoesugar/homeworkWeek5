@@ -1,0 +1,24 @@
+.bg-dot {
+  background-image: url(/assets/images/service/banner-bg-pc.png);
+  background-size: cover; /* 改這裡 */
+  background-position: center center;
+  background-repeat: no-repeat; /* 避免重複 */
+}
+
+.px-248 {
+  padding: 0px 248px;
+}
+
+.banner-person {
+  top: 65%;
+  left: 68.75%;
+}
+
+.hot {
+  background-color: $secondary;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 8px 16px;
+  top: 0;
+  left: 0;
+}
