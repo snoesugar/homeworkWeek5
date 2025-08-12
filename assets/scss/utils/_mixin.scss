@@ -99,6 +99,35 @@
 }
 
 
+@media (min-width: 768px) {
+  /*md-service*/
+  .fs-md-6.fs-7 {
+    font-size: 18px !important;
+  }
+  .fs-md-2.fs-3 {
+    font-size: 32px !important;
+  }
+  .fs-md-7.fs-8 {
+    font-size: 16px !important;
+  }
+  .fs-md-4.fs-5 {
+    font-size: 24px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscribe.position-relative {
+    background-size: auto 80%;
+    background-position: -355px -30px;
+  }
+  .h-332.mt-n332 {
+    margin-top: -179px;
+    height: 179px;
+  }
+
+}
+
+
 @media (max-width: 1024px) {
   /*login*/
   .col-lg-5.login-py {

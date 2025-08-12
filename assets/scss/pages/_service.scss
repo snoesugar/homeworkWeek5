@@ -5,10 +5,6 @@
   background-repeat: no-repeat; /* 避免重複 */
 }
 
-.px-248 {
-  padding: 0px 248px;
-}
-
 .banner-person {
   top: 65%;
   left: 68.75%;
@@ -21,4 +17,28 @@
   padding: 8px 16px;
   top: 0;
   left: 0;
+}
+
+.h-332 {
+  height: 332px;
+}
+
+.mt-n332 {
+  margin-top: -332px;
+}
+
+.subscribe {
+  background-image: url(/assets/images/service/subscribe-3.svg);
+  background-size: 80;
+  background-position: 256px 0px;
+  background-repeat: no-repeat;
+  background-color: $secondary-90;
+  max-width: 856px;
+  margin: 0 auto;
+} 
+.subscribe-l-img {
+  left: 24px;
+}
+.subscribe-r-img {
+  right: 24px;
 }
