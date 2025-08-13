@@ -4,12 +4,8 @@
 }
 
 .about-card {
-  width: 344px;
+  width: 320px;
   height: 576px;
-}
-
-.px-200 {
-  padding: 0px 200px;
 }
 
 .w-120 {
@@ -22,4 +18,26 @@
 
 .mt-n280 {
   margin-top: -280px;
+}
+
+.gap-x-2 {
+  column-gap: 8px;
+}
+
+.gap-y-1 {
+  row-gap: 4px;
+}
+
+.swiper4 .swiper-slide {
+  width: auto; /* 或用 swiper 自己控制，不要設死寬 */
+  flex-shrink: 0; /* 防止卡片被壓縮 */
+}
+
+.swiper4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-map {
+  object-fit: cover; /* 確保比例不變形，可選 */
 }
