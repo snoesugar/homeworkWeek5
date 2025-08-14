@@ -10,6 +10,11 @@
   padding-right: 12px;
 }
 
+.bg-secondary:hover {
+  background: $primary !important;
+  color: white;
+}
+
 //第2張
 .card-mark {
   color: white;
@@ -140,6 +145,12 @@
 
 .bg-natural-95 {
   background-color: $Natural-95;
+}
+
+.bg-black:hover {
+  color: black !important;
+  background-color: $secondary !important;
+  border: 2px solid $secondary;
 }
 
 //第5張
