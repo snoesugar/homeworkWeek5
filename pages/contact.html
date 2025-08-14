@@ -15,305 +15,359 @@
         <h1 class="fs-md-2 fs-3 mb-md-6 mb-4">聯絡我們</h1>
         <p class="t-gray fs-md-6 fs-7 mb-md-9 mb-6">每一封郵件，我們都會親自回覆。每一通電話，都是新可能的開始。</p>
       </div>
-      <div class="container px-6 m-auto position-relative">
-        <img src="/assets/images/contact/form-top.svg" class="contact-img position-absolute d-lg-block d-none" alt="form-top">
-        <div class="row">
-          <div class="col-lg-10 plan">
-            <!--基本資料-->
-            <div class="plan-card bb-gray d-lg-flex">
-              <div class="plan-title d-lg-block d-flex justify-content-between"> 
-                <h4 class="mb-lg-3 mb-0">基本資料</h4>
-                <div class="d-flex align-items-center">
-                  <span class="plan-title-small">欄位皆為</span>
-                  <span class="badge rounded-pill bg-danger ms-1">必填</span>
+      <form class="needs-validation" novalidate>
+        <div class="container px-6 m-auto position-relative">
+          <img src="/assets/images/contact/form-top.svg" class="contact-img position-absolute d-lg-block d-none" alt="form-top">
+          <div class="row">
+            <div class="col-lg-10 plan">
+              <!--基本資料-->
+              <div class="plan-card bb-gray d-lg-flex">
+                <div class="plan-title d-lg-block d-flex justify-content-between"> 
+                  <h4 class="mb-lg-3 mb-0">基本資料</h4>
+                  <div class="d-flex align-items-center">
+                    <span class="plan-title-small">欄位皆為</span>
+                    <span class="badge rounded-pill bg-danger ms-1">必填</span>
+                  </div>
                 </div>
-              </div>
-              <div class="plan-content">
-                <div class="mb-4 mb-lg-6">
-                  <form class="form-floating">
-                    <input type="name" class="form-control" id="name" placeholder="name" value="">
+                <div class="plan-content">
+                  <div class="mb-4 mb-lg-6 d-none"><!--第一個標題都會跑出去，所以隱藏-->
+                    <form class="form-floating">
+                      <input type="text" class="form-control" id="name" placeholder="" value="" required>
+                      <label class="text-black" for="name">姓名</label>
+                    </form>
+                    <div class="invalid-feedback bg-pink">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                      </svg>
+                      error text
+                    </div>
+                  </div>
+                  <form class="form-floating mb-4 mb-lg-6">
+                    <input type="text" class="form-control" id="name" placeholder="" value="" required>
                     <label class="text-black" for="name">姓名</label>
+                    <div class="invalid-feedback bg-pink">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                      </svg>
+                      請填寫姓名
+                    </div>
                   </form>
-                </div>
-                <div class="mb-4 mb-lg-6">
-                  <form class="form-floating">
-                    <input type="email" class="form-control" id="email" placeholder="請輸入信箱" value="">
+                  <form class="form-floating mb-4 mb-lg-6">
+                    <input type="email" class="form-control" id="email" placeholder="請輸入信箱" value="" required>
                     <label class="text-black" for="email">信箱</label>
+                    <div class="invalid-feedback bg-pink">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                    </svg>
+                    請填寫信箱
+                    </div>
+                    <small class="ms-2 t-gray d-inline-block">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</small>
                   </form>
-                  <small class="ms-2 t-gray d-inline-block">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</small>
-                </div>
-                <div class="mb-4 mb-lg-6">
-                  <form class="form-floating">
-                    <input type="tel" class="form-control" id="tel" placeholder="請輸入電話" value="">
+                  <form class="form-floating mb-4 mb-lg-6">
+                    <input type="tel" class="form-control" id="tel" placeholder="請輸入電話" value="" required>
                     <label class="text-black" for="tel">聯絡電話</label>
+                    <div class="invalid-feedback bg-pink">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                    </svg>
+                    請填寫電話
+                    </div>
+                    <small class="ms-2 t-gray d-inline-block">我們不會以電話主動聯繫您，告知您要至ATM操作轉帳</small>
                   </form>
-                  <small class="ms-2 t-gray d-inline-block">我們不會以電話主動聯繫您，告知您要至ATM操作轉帳</small>
-                </div>
-                <div class="dropdown work mb-0">
-                  <button class="btn dropdown-toggle w-100 text-start d-work py-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span>目前職業/工作身分</span>
-                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                  </button>
-                  <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
-                    <li>
-                      <a class="dropdown-item" href="#">科技</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">媒體</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">教育</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">金融</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">醫療健康</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">零售製造</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">服務業</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">藝術創意</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">非營利組識</a>
-                    </li>
-                  </ul>
+                  <div class="mb-0">
+                    <select class="form-select py-4" id="job" required>
+                      <option value="" selected disabled hidden>目前職業/工作身分</option>
+                      <option value="科技">科技</option>
+                      <option value="媒體">媒體</option>
+                      <option value="教育">教育</option>
+                      <option value="金融">金融</option>
+                      <option value="醫療健康">醫療健康</option>
+                      <option value="零售製造">零售製造</option>
+                      <option value="服務業">服務業</option>
+                      <option value="藝術創意">藝術創意</option>
+                      <option value="非營利組織">非營利組織</option>
+                    </select>
+                    <div class="invalid-feedback bg-pink">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                    </svg>
+                    請選擇一個職業/工作身分
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!--諮詢需求-->
-            <div class="plan-card bb-gray d-lg-flex">
-              <div class="plan-title d-lg-block d-flex justify-content-between"> 
-                <h4 class="mb-lg-3 mb-0">諮詢需求</h4>
-                <div class="d-flex align-items-center">
-                  <span class="plan-title-small">欄位皆為</span>
-                  <span class="badge rounded-pill bg-danger ms-1">必填</span>
+              <!--諮詢需求-->
+              <div class="plan-card bb-gray d-lg-flex">
+                <div class="plan-title d-lg-block d-flex justify-content-between"> 
+                  <h4 class="mb-lg-3 mb-0">諮詢需求</h4>
+                  <div class="d-flex align-items-center">
+                    <span class="plan-title-small">欄位皆為</span>
+                    <span class="badge rounded-pill bg-danger ms-1">必填</span>
+                  </div>
                 </div>
+                  <div class="plan-content">
+                    <div class="mb-lg-6 mb-4">
+                      <p class="mb-2">諮詢主題</p>
+                      <div class="d-flex flex-wrap gap-2 ms-2">
+                        <div>
+                          <input type="checkbox" id="btntheme1" />
+                          <label for="btntheme1" class="me-lg-4 me-2">職涯探索與方向</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="btntheme2" />
+                          <label for="btntheme2" class="me-lg-4 me-2">接案與技能變現</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="btntheme3" />
+                          <label for="btntheme3" class="me-lg-4 me-2">品牌與內容經營</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="btntheme4" />
+                          <label for="btntheme4" class="me-lg-4 me-2">遠端工作與數位游牧</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="btntheme5" />
+                          <label for="btntheme5" class="me-lg-4 me-2">收入與時間管理</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="btntheme6" />
+                          <label for="btntheme6" class="me-lg-4 me-2">其他（請填寫下題）</label>
+                        </div>
+                      </div>
+                      <div class="invalid-feedback bg-pink">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                        </svg>
+                        請選擇一個期望諮詢的專家
+                      </div>
+                      <small class="ms-2 t-gray d-inline-block">可複選，讓我們更了解你的狀況，安排最適合的顧問與建議。</small>
+                    </div>
+                    <div class="mb-lg-6 mb-4">
+                      <select class="form-select py-4" id="job" required>
+                        <option value="" selected disabled hidden>期望諮詢的專家</option>
+                        <option value="科技">科技</option>
+                        <option value="媒體">媒體</option>
+                        <option value="教育">教育</option>
+                        <option value="金融">金融</option>
+                        <option value="醫療健康">醫療健康</option>
+                        <option value="零售製造">零售製造</option>
+                        <option value="服務業">服務業</option>
+                        <option value="藝術創意">藝術創意</option>
+                        <option value="非營利組織">非營利組織</option>
+                      </select>
+                      <div class="invalid-feedback bg-pink">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                        </svg>
+                        請選擇一個期望諮詢的專家
+                      </div>
+                    </div>
+                    <div class="form-floating mb-lg-6 mb-4">
+                      <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                      <label class="text-black" for="floatingTextarea">
+                      您目前面臨的主要挑戰
+                      </label>
+                      <div class="invalid-feedback bg-pink">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                        </svg>
+                        請輸入您目前面臨的主要挑戰
+                      </div>
+                    </div>
+                    <div class="form-floating mb-0">
+                      <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                      <label class="text-black" for="floatingTextarea">
+                      期望達成的目標
+                      </label>
+                      <div class="invalid-feedback bg-pink">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                        </svg>
+                        請輸入期望達成的目標
+                      </div>
+                    </div>
+                  </div>
               </div>
+              <!--聯絡偏好-->
+              <div class="plan-card d-lg-flex">
+                <div class="plan-title d-lg-block d-flex justify-content-between"> 
+                  <h4 class="mb-lg-3 mb-0">聯絡偏好</h4>
+                  <div class="d-flex align-items-center">
+                    <span class="plan-title-small">欄位皆為選填</span>
+                  </div>
+                </div>
                 <div class="plan-content">
                   <div class="mb-lg-6 mb-4">
-                    <p class="mb-2">諮詢主題</p>
-                    <div class="d-flex flex-wrap gap-2">
+                    <p class="mb-2">偏好聯絡方式</p>
+                    <div class="d-flex flex-wrap gap-2 ms-2">
                       <div>
-                        <input type="checkbox" id="btntheme1" />
-                        <label for="btntheme1" class="me-lg-4 me-2">職涯探索與方向</label>
+                        <input type="radio" name="job" id="btncontact1" />
+                        <label for="btncontact1" class="me-lg-4 me-2">信箱</label>
                       </div>
                       <div>
-                        <input type="checkbox" id="btntheme2" />
-                        <label for="btntheme2" class="me-lg-4 me-2">接案與技能變現</label>
+                        <input type="radio" name="job" id="btncontact2" />
+                        <label for="btncontact2" class="me-lg-4 me-2">電話</label>
                       </div>
                       <div>
-                        <input type="checkbox" id="btntheme3" />
-                        <label for="btntheme3" class="me-lg-4 me-2">品牌與內容經營</label>
+                        <input type="radio" name="job" id="btncontact3" />
+                        <label for="btncontact3" class="me-lg-4 me-2">LINE</label>
                       </div>
                       <div>
-                        <input type="checkbox" id="btntheme4" />
-                        <label for="btntheme4" class="me-lg-4 me-2">遠端工作與數位游牧</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btntheme5" />
-                        <label for="btntheme5" class="me-lg-4 me-2">收入與時間管理</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" id="btntheme6" />
-                        <label for="btntheme6" class="me-lg-4 me-2">其他（請填寫下題）</label>
+                        <input type="radio" name="job" id="btncontact4" />
+                        <label for="btncontact4" class="me-lg-4 me-2">Discord</label>
                       </div>
                     </div>
-                    <small class="ms-2 t-gray d-inline-block">可複選，讓我們更了解你的狀況，安排最適合的顧問與建議。</small>
                   </div>
-                  <div class="dropdown work mb-lg-6 mb-4">
-                    <button class="btn dropdown-toggle w-100 text-start d-work py-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span>期望諮詢的專家</span>
-                      <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                    </button>
-                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <a class="dropdown-item" href="#">科技</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">媒體</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">教育</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">金融</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">醫療健康</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">零售製造</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">服務業</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">藝術創意</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">非營利組識</a>
-                      </li>
-                    </ul>
+                  <div class="mb-lg-6 mb-4">
+                    <p class="mb-2">偏好聯絡時段</p>
+                    <div class="d-flex flex-wrap gap-2 ms-2">
+                      <div>
+                        <input type="checkbox" id="btntime1" />
+                        <label for="btntime1" class="me-lg-4 me-2">平日上午(9:00-12:00)</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btntime2" />
+                        <label for="btntime2" class="me-lg-4 me-2">平日下午(13:00-17:00)</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btntime3" />
+                        <label for="btntime3" class="me-lg-4 me-2">平日晚上(18:00-21:00)</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btntime4" />
+                        <label for="btntime4" class="me-lg-4 me-2">週末上午(9:00-12:00)</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btntime5" />
+                        <label for="btntime5" class="me-lg-4 me-2">週末下午(13:00-17:00)</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btntime6" />
+                        <label for="btntime6" class="me-lg-4 me-2">週末晚上(18:00-21:00)</label>
+                      </div>
+                    </div>
+                    <small class="ms-2 t-gray d-inline-block">建議您可以勾選 2 個時段以上</small>
+                  </div>
+                  <div class="mb-4 mb-lg-6">
+                    <form class="form-floating">
+                      <input type="date" class="form-control" id="birthday" placeholder="請輸入生日" value="" required>
+                      <label for="birthday">預約諮詢時間</label>
+                      <div class="invalid-feedback bg-pink">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                      </svg>
+                      請選擇預約諮詢時間
+                    </div>
+                    </form>
+                  </div>
+                  <div class="mb-lg-6 mb-4">
+                    <p class="mb-2">如何得知我們</p>
+                    <div class="d-flex flex-wrap gap-2 ms-2">
+                      <div>
+                        <input type="checkbox" id="btnknow1" />
+                        <label for="btnknow1" class="me-lg-4 me-2">Google 搜尋</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btnknow2" />
+                        <label for="btnknow2" class="me-lg-4 me-2">Instagram</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btnknow3" />
+                        <label for="btnknow3" class="me-lg-4 me-2">Facebook</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btnknow4" />
+                        <label for="btnknow4" class="me-lg-4 me-2">Threads</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btnknow5" />
+                        <label for="btnknow5" class="me-lg-4 me-2">YouTube</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btnknow6" />
+                        <label for="btnknow6" class="me-lg-4 me-2">Podcast / 節目推薦</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btnknow7" />
+                        <label for="btnknow7" class="me-lg-4 me-2">朋友或同事推薦</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btnknow8" />
+                        <label for="btnknow8" class="me-lg-4 me-2">曾參加職旅活動 / 工作坊</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btnknow9" />
+                        <label for="btnknow9" class="me-lg-4 me-2">職涯顧問介紹</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="btnknow10" />
+                        <label for="btnknow10" class="me-lg-4 me-2">其他（請填寫下題）</label>
+                      </div>
+                    </div>
+                    <small class="ms-2 t-gray d-inline-block">最多勾選 3 個</small>
                   </div>
                   <div class="form-floating mb-lg-6 mb-4">
-                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
                     <label class="text-black" for="floatingTextarea">
-                    您目前面臨的主要挑戰
+                    有什麼其他想告訴我們的事情嗎？（最多300字）
                     </label>
+                    <div class="invalid-feedback bg-pink">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                      </svg>
+                      請輸入其他想告訴我們的事情
+                    </div>
                   </div>
-                  <div class="form-floating mb-0">
-                    <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label class="text-black" for="floatingTextarea">
-                    期望達成的目標
-                    </label>
+                  <div class="mb-2">
+                    <input type="checkbox" id="btncheck1">
+                    <label for="btncheck1" class="me-lg-4 me-2">我願意接收職旅最新資訊和專業內容</label>
                   </div>
-                </div>
-            </div>
-            <!--聯絡偏好-->
-            <div class="plan-card d-lg-flex">
-              <div class="plan-title d-lg-block d-flex justify-content-between"> 
-                <h4 class="mb-lg-3 mb-0">聯絡偏好</h4>
-                <div class="d-flex align-items-center">
-                  <span class="plan-title-small">欄位皆為選填</span>
+                  <div>
+                    <input type="checkbox" id="btncheck2" required>
+                    <label for="btncheck2" class="me-lg-4 me-2">我同意<a href="agreement.html">服務條款</a>和<a href="privacy.html">隱私政策</a></label>
+                    <div class="invalid-feedback bg-pink">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                      </svg>
+                      請勾選同意才可以送出哦!
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="plan-content">
-                <div class="mb-lg-6 mb-4">
-                  <p class="mb-2">偏好聯絡方式</p>
-                  <div class="d-flex flex-wrap gap-2 ms-2">
-                    <div>
-                      <input type="radio" name="job" id="btncontact1" />
-                      <label for="btncontact1" class="me-lg-4 me-2">信箱</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="job" id="btncontact2" />
-                      <label for="btncontact2" class="me-lg-4 me-2">電話</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="job" id="btncontact3" />
-                      <label for="btncontact3" class="me-lg-4 me-2">LINE</label>
-                    </div>
-                    <div>
-                      <input type="radio" name="job" id="btncontact4" />
-                      <label for="btncontact4" class="me-lg-4 me-2">Discord</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-lg-6 mb-4">
-                  <p class="mb-2">偏好聯絡時段</p>
-                  <div class="d-flex flex-wrap gap-2">
-                    <div>
-                      <input type="checkbox" id="btntime1" />
-                      <label for="btntime1" class="me-lg-4 me-2">平日上午(9:00-12:00)</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btntime2" />
-                      <label for="btntime2" class="me-lg-4 me-2">平日下午(13:00-17:00)</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btntime3" />
-                      <label for="btntime3" class="me-lg-4 me-2">平日晚上(18:00-21:00)</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btntime4" />
-                      <label for="btntime4" class="me-lg-4 me-2">週末上午(9:00-12:00)</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btntime5" />
-                      <label for="btntime5" class="me-lg-4 me-2">週末下午(13:00-17:00)</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btntime6" />
-                      <label for="btntime6" class="me-lg-4 me-2">週末晚上(18:00-21:00)</label>
-                    </div>
-                  </div>
-                  <small class="ms-2 t-gray d-inline-block">建議您可以勾選 2 個時段以上</small>
-                </div>
-                <div class="mb-4 mb-lg-6">
-                  <form class="form-floating">
-                    <input type="date" class="form-control" id="birthday" placeholder="請輸入生日" value="">
-                    <label for="birthday">預約諮詢時間</label>
-                  </form>
-                </div>
-                <div class="mb-lg-6 mb-4">
-                  <p class="mb-2">如何得知我們</p>
-                  <div class="d-flex flex-wrap gap-2">
-                    <div>
-                      <input type="checkbox" id="btnknow1" />
-                      <label for="btnknow1" class="me-lg-4 me-2">Google 搜尋</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btnknow2" />
-                      <label for="btnknow2" class="me-lg-4 me-2">Instagram</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btnknow3" />
-                      <label for="btnknow3" class="me-lg-4 me-2">Facebook</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btnknow4" />
-                      <label for="btnknow4" class="me-lg-4 me-2">Threads</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btnknow5" />
-                      <label for="btnknow5" class="me-lg-4 me-2">YouTube</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btnknow6" />
-                      <label for="btnknow6" class="me-lg-4 me-2">Podcast / 節目推薦</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btnknow7" />
-                      <label for="btnknow7" class="me-lg-4 me-2">朋友或同事推薦</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btnknow8" />
-                      <label for="btnknow8" class="me-lg-4 me-2">曾參加職旅活動 / 工作坊</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btnknow9" />
-                      <label for="btnknow9" class="me-lg-4 me-2">職涯顧問介紹</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="btnknow10" />
-                      <label for="btnknow10" class="me-lg-4 me-2">其他（請填寫下題）</label>
-                    </div>
-                  </div>
-                  <small class="ms-2 t-gray d-inline-block">最多勾選 3 個</small>
-                </div>
-                <div class="form-floating mb-lg-6 mb-4">
-                  <textarea class="form-control textarea-h" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                  <label class="text-black" for="floatingTextarea">
-                  有什麼其他想告訴我們的事情嗎？（最多300字）
-                  </label>
-                </div>
-                <div class="mb-2">
-                  <input type="checkbox" id="btncheck1" />
-                  <label for="btncheck1" class="me-lg-4 me-2">我願意接收職旅最新資訊和專業內容</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="btncheck2" />
-                  <label for="btncheck2" class="me-lg-4 me-2">我同意<a href="agreement.html">服務條款</a>和<a href="privacy.html">隱私政策</a></label>
-                </div>
+              <div class="text-center mb-lg-9 d-flex flex-column-reverse d-lg-block p-lg-0 px-3 py-6">
+                <button type="button" class="btn-white me-lg-6 d-inline-flex align-items-center justify-content-center">重新填寫<span class="material-symbols-outlined ms-1 ">chevron_right</span></button>
+                <button type="submit" class="btn-black mb-lg-0 mb-4 d-inline-flex align-items-center justify-content-center">確認送出<span class="material-symbols-outlined ms-1 ">chevron_right</span></button>
               </div>
-            </div>
-            <div class="text-center mb-lg-9 d-flex flex-column-reverse d-lg-block p-lg-0 px-3 py-6">
-              <button type="button" class="btn-white me-lg-6 d-inline-flex align-items-center justify-content-center">重新填寫<span class="material-symbols-outlined ms-1 ">chevron_right</span></button>
-              <button type="button" class="btn-black mb-lg-0 mb-4 d-inline-flex align-items-center justify-content-center">確認送出<span class="material-symbols-outlined ms-1 ">chevron_right</span></button>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
     <%- include('./layout/footer'); -%>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
   </body>
 </html>

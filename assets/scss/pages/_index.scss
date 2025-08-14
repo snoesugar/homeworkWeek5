@@ -31,6 +31,14 @@
   width: 48px;
 }
 
+.story-img {
+  transition: transform 0.3s ease; /* 放大動畫的時間與速度 */
+}
+
+.story-img:hover {
+  transform: scale(1.1); /* 放大到 110% */
+}
+
 //第3張
 .why {
   position: relative;
