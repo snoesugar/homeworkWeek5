@@ -284,7 +284,7 @@
         </div>
         <div class="col-3">
           <div class="card sp-radius position-relative">
-            <div class="sp-step fs-8 fw-bold position-absolute">STEP 1</div>
+            <div class="sp-step fs-8 fw-bold position-absolute">STEP 4</div>
             <img src="/assets/images/index/serve-4.svg" class="d-block mx-auto mt-10 sp-w160" alt="serve-4">
             <div class="text-center px-6 mb-9">
               <h5 class="fs-4 fw-bold my-6">實戰指導</h5>
@@ -516,6 +516,28 @@
       scrollbar: {
         el: '.swiper-scrollbar',
       },
+    });
+
+    //手風琴JS
+    document.addEventListener("DOMContentLoaded", () => {
+      const accordions = document.querySelectorAll(".accordion");
+
+      accordions.forEach((accordion) => {
+        const buttons = accordion.querySelectorAll(".accordion-button");
+
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            accordions.forEach((otherAccordion) => {
+              if (otherAccordion !== accordion) {
+                const otherCollapses = otherAccordion.querySelectorAll(".accordion-collapse");
+                otherCollapses.forEach((collapse) => {
+                  collapse.classList.remove("show");
+                });
+              }
+            });
+          });
+        });
+      });
     });
     </script>
   </body>
