@@ -13,18 +13,11 @@
     <div class="header-background">
     <nav class="navbar navbar-expand-lg navbar-light header-background py-lg-3 py-14">
       <div class="container">
-        <a class="navbar-brand d-block me-auto" href="index.html">
+        <a class="navbar-brand d-block" href="index.html">
           <img src="/homeworkWeek5/assets/logo-CRTeTChE.svg" class="logo" alt="logo">
         </a>
-        <a href="member.html" class="d-lg-none d-block fs-8 user me-3">
-            <img src="/homeworkWeek5/assets/avatar-QGHQ479s.png" alt="user">
-            <span>Mokumaru</span>
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto mb-lg-0 mb-2 d-lg-flex d-block">
+        <div>
+          <ul class="navbar-nav m-auto mb-lg-0 mb-2 d-lg-flex d-none">
             <li class="nav-item">
               <a class="nav-link text-black text-center py-lg-2 py-4" aria-current="page" href="service.html">服務方案</a>
             </li>
@@ -35,14 +28,270 @@
               <a class="nav-link text-black text-center py-lg-2 py-4" href="contact.html">聯絡我們</a>
             </li>
           </ul>
-          <a href="member.html" class="d-lg-block d-none user">
-            <img src="/homeworkWeek5/assets/avatar-QGHQ479s.png" alt="user">
-            <span>Mokumaru</span>
-          </a>
         </div>
+        <button type="button" class="bg-white border border-gray py-2 px-6 rounded-4 d-block ms-lg-0 ms-auto"  data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+            登入/註冊  
+        </button>
+        <button class="navbar-toggler border-0 ms-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </nav>
 </div>
+
+<!-- 登入 -->
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-lg-down">
+    <div class="modal-content rounded-lg-4">
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-7 d-lg-block d-none"> 
+            <img src="/homeworkWeek5/assets/login-DRI71ClI.png" class="img-fluid radius-ltb-16 login-h770" alt="login">
+          </div>
+          <div class="col-lg-5 login-py position-relative">
+            <button type="button" class="btn-close position-absolute close-position" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h2 class="text-center fw-bold py-9 mb-0">登入</h2>
+            <div class="text-center d-block pb-6 mb-6 border-bottom">
+              <button type="button" class="btn-white d-block w-100 mb-4">
+                <svg class="me-1" width="20" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.56 12.25C22.56 11.47 22.49 10.72 22.36 10H12V14.26H17.92C17.66 15.63 16.88 16.79 15.71 17.57V20.34H19.28C21.36 18.42 22.56 15.6 22.56 12.25Z" fill="#4285F4"/>
+                <path d="M12 23.0001C14.97 23.0001 17.46 22.0201 19.28 20.3401L15.71 17.5701C14.73 18.2301 13.48 18.6301 12 18.6301C9.13999 18.6301 6.70999 16.7001 5.83999 14.1001H2.17999V16.9401C3.98999 20.5301 7.69999 23.0001 12 23.0001Z" fill="#34A853"/>
+                <path d="M5.84 14.0901C5.62 13.4301 5.49 12.7301 5.49 12.0001C5.49 11.2701 5.62 10.5701 5.84 9.91007V7.07007H2.18C1.43 8.55007 1 10.2201 1 12.0001C1 13.7801 1.43 15.4501 2.18 16.9301L5.03 14.7101L5.84 14.0901Z" fill="#FBBC05"/>
+                <path d="M12 5.38C13.62 5.38 15.06 5.94 16.21 7.02L19.36 3.87C17.45 2.09 14.97 1 12 1C7.69999 1 3.98999 3.47 2.17999 7.07L5.83999 9.91C6.70999 7.31 9.13999 5.38 12 5.38Z" fill="#EA4335"/>
+                </svg>
+                Google
+              </button>
+              <button type="button" class="btn-white d-block w-100">
+                <svg class="me-1" width="20" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.003 4C15.747 4 16.533 4.26 17.253 4.547L17.78 4.763C19.04 5.291 19.748 6.399 20.297 7.616C21.188 9.591 21.807 12.224 22.021 14.226C22.123 15.176 22.148 16.132 21.965 16.775C21.768 17.462 21.098 17.948 20.447 18.33L20.125 18.513L19.791 18.699C19.619 18.795 19.442 18.89 19.266 18.983L18.744 19.253L18.027 19.61L17.45 19.894C17.3321 19.9576 17.2027 19.9968 17.0693 20.0094C16.936 20.022 16.8015 20.0077 16.6738 19.9673C16.5461 19.9269 16.4279 19.8613 16.326 19.7743C16.2242 19.6874 16.1408 19.5808 16.0809 19.461C16.021 19.3413 15.9858 19.2107 15.9774 19.077C15.9689 18.9433 15.9874 18.8094 16.0317 18.683C16.076 18.5566 16.1452 18.4404 16.2353 18.3413C16.3254 18.2422 16.4344 18.1622 16.556 18.106L17.346 17.716L16.766 17.107C15.376 17.677 13.739 18 12 18C10.261 18 8.624 17.678 7.234 17.107L6.654 17.715L7.447 18.105C7.56453 18.1637 7.66935 18.245 7.75548 18.3442C7.8416 18.4434 7.90734 18.5586 7.94894 18.6832C7.99054 18.8078 8.00718 18.9394 7.99793 19.0705C7.98868 19.2015 7.9537 19.3295 7.895 19.447C7.8363 19.5645 7.75502 19.6694 7.65581 19.7555C7.5566 19.8416 7.4414 19.9073 7.31678 19.9489C7.06511 20.033 6.79037 20.0136 6.553 19.895L6.009 19.625C5.607 19.425 5.204 19.227 4.806 19.018L3.878 18.513L3.557 18.33C2.906 17.948 2.235 17.462 2.039 16.775C1.855 16.132 1.881 15.177 1.982 14.225C2.196 12.224 2.815 9.591 3.706 7.616C4.255 6.399 4.963 5.291 6.223 4.763C7.059 4.413 8.072 4 9 4C9.603 4 10.077 4.555 9.99 5.147C10.6555 5.04854 11.3273 4.9994 12 5C12.691 5 13.366 5.05 14.014 5.148C13.9947 5.00599 14.0058 4.8615 14.0466 4.72411C14.0874 4.58671 14.1568 4.45954 14.2504 4.35101C14.344 4.24248 14.4596 4.15507 14.5895 4.09456C14.7194 4.03404 14.8597 4.00181 15.003 4ZM8.75 10.5C8.28587 10.5 7.84075 10.6844 7.51256 11.0126C7.18437 11.3408 7 11.7859 7 12.25C7 12.7141 7.18437 13.1592 7.51256 13.4874C7.84075 13.8156 8.28587 14 8.75 14C9.21413 14 9.65925 13.8156 9.98744 13.4874C10.3156 13.1592 10.5 12.7141 10.5 12.25C10.5 11.7859 10.3156 11.3408 9.98744 11.0126C9.65925 10.6844 9.21413 10.5 8.75 10.5ZM15.25 10.5C14.7859 10.5 14.3408 10.6844 14.0126 11.0126C13.6844 11.3408 13.5 11.7859 13.5 12.25C13.5 12.7141 13.6844 13.1592 14.0126 13.4874C14.3408 13.8156 14.7859 14 15.25 14C15.7141 14 16.1592 13.8156 16.4874 13.4874C16.8156 13.1592 17 12.7141 17 12.25C17 11.7859 16.8156 11.3408 16.4874 11.0126C16.1592 10.6844 15.7141 10.5 15.25 10.5Z" fill="#586AEA"/>
+                </svg>
+                Discord
+              </button>
+            </div>
+              <div class="mb-4">
+                <div class="form-floating text-black">
+                  <input type="text" class="form-control rounded-3" id="account" placeholder="請輸入帳號" value="" required>
+                  <label class="text-black" for="account">帳號</label>
+                  <div class="invalid-feedback bg-pink">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                    </svg>
+                    請輸入帳號
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <div class="form-floating text-black">
+                  <input type="password" class="form-control rounded-3" id="password" placeholder="請輸入密碼" value="" required>
+                  <label class="text-black" for="password">密碼</label>
+                  <div class="invalid-feedback bg-pink">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                    </svg>
+                    請輸入密碼
+                  </div>
+                </div>
+              </div>
+              <div class="text-end mb-4">
+                <a href="#" class="d-inline-block t-gray text-decoration-none ms-auto">
+                  忘記密碼
+                </a>
+              </div>
+              <button type="submit" class="btn-black w-100 d-inline-flex align-items-center justify-content-center mb-9">
+                送出<span class="material-symbols-outlined ms-1">chevron_right</span>
+              </button>
+              <div class="text-center">
+                <a href="#" class="d-inline-block t-gray text-decoration-none ms-auto">
+                  不是會員？
+                </a>
+                <a href="#" class="d-inline-block text-primary ms-auto" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  快速註冊
+                </a>
+              </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--註冊-->
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-lg-down">
+    <div class="modal-content rounded-lg-4">
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-lg-5 register-py position-relative">
+            <button type="button" class="btn-close position-absolute close-position" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h2 class="text-center fw-bold py-9 mb-0">註冊</h2>
+            <div class="text-center d-block pb-6 mb-6 border-bottom">
+              <button type="button" class="btn-white d-block w-100 mb-4">
+                <svg class="me-1" width="20" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.56 12.25C22.56 11.47 22.49 10.72 22.36 10H12V14.26H17.92C17.66 15.63 16.88 16.79 15.71 17.57V20.34H19.28C21.36 18.42 22.56 15.6 22.56 12.25Z" fill="#4285F4"/>
+                <path d="M12 23.0001C14.97 23.0001 17.46 22.0201 19.28 20.3401L15.71 17.5701C14.73 18.2301 13.48 18.6301 12 18.6301C9.13999 18.6301 6.70999 16.7001 5.83999 14.1001H2.17999V16.9401C3.98999 20.5301 7.69999 23.0001 12 23.0001Z" fill="#34A853"/>
+                <path d="M5.84 14.0901C5.62 13.4301 5.49 12.7301 5.49 12.0001C5.49 11.2701 5.62 10.5701 5.84 9.91007V7.07007H2.18C1.43 8.55007 1 10.2201 1 12.0001C1 13.7801 1.43 15.4501 2.18 16.9301L5.03 14.7101L5.84 14.0901Z" fill="#FBBC05"/>
+                <path d="M12 5.38C13.62 5.38 15.06 5.94 16.21 7.02L19.36 3.87C17.45 2.09 14.97 1 12 1C7.69999 1 3.98999 3.47 2.17999 7.07L5.83999 9.91C6.70999 7.31 9.13999 5.38 12 5.38Z" fill="#EA4335"/>
+                </svg>
+                Google
+              </button>
+              <button type="button" class="btn-white d-block w-100">
+                <svg class="me-1" width="20" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.003 4C15.747 4 16.533 4.26 17.253 4.547L17.78 4.763C19.04 5.291 19.748 6.399 20.297 7.616C21.188 9.591 21.807 12.224 22.021 14.226C22.123 15.176 22.148 16.132 21.965 16.775C21.768 17.462 21.098 17.948 20.447 18.33L20.125 18.513L19.791 18.699C19.619 18.795 19.442 18.89 19.266 18.983L18.744 19.253L18.027 19.61L17.45 19.894C17.3321 19.9576 17.2027 19.9968 17.0693 20.0094C16.936 20.022 16.8015 20.0077 16.6738 19.9673C16.5461 19.9269 16.4279 19.8613 16.326 19.7743C16.2242 19.6874 16.1408 19.5808 16.0809 19.461C16.021 19.3413 15.9858 19.2107 15.9774 19.077C15.9689 18.9433 15.9874 18.8094 16.0317 18.683C16.076 18.5566 16.1452 18.4404 16.2353 18.3413C16.3254 18.2422 16.4344 18.1622 16.556 18.106L17.346 17.716L16.766 17.107C15.376 17.677 13.739 18 12 18C10.261 18 8.624 17.678 7.234 17.107L6.654 17.715L7.447 18.105C7.56453 18.1637 7.66935 18.245 7.75548 18.3442C7.8416 18.4434 7.90734 18.5586 7.94894 18.6832C7.99054 18.8078 8.00718 18.9394 7.99793 19.0705C7.98868 19.2015 7.9537 19.3295 7.895 19.447C7.8363 19.5645 7.75502 19.6694 7.65581 19.7555C7.5566 19.8416 7.4414 19.9073 7.31678 19.9489C7.06511 20.033 6.79037 20.0136 6.553 19.895L6.009 19.625C5.607 19.425 5.204 19.227 4.806 19.018L3.878 18.513L3.557 18.33C2.906 17.948 2.235 17.462 2.039 16.775C1.855 16.132 1.881 15.177 1.982 14.225C2.196 12.224 2.815 9.591 3.706 7.616C4.255 6.399 4.963 5.291 6.223 4.763C7.059 4.413 8.072 4 9 4C9.603 4 10.077 4.555 9.99 5.147C10.6555 5.04854 11.3273 4.9994 12 5C12.691 5 13.366 5.05 14.014 5.148C13.9947 5.00599 14.0058 4.8615 14.0466 4.72411C14.0874 4.58671 14.1568 4.45954 14.2504 4.35101C14.344 4.24248 14.4596 4.15507 14.5895 4.09456C14.7194 4.03404 14.8597 4.00181 15.003 4ZM8.75 10.5C8.28587 10.5 7.84075 10.6844 7.51256 11.0126C7.18437 11.3408 7 11.7859 7 12.25C7 12.7141 7.18437 13.1592 7.51256 13.4874C7.84075 13.8156 8.28587 14 8.75 14C9.21413 14 9.65925 13.8156 9.98744 13.4874C10.3156 13.1592 10.5 12.7141 10.5 12.25C10.5 11.7859 10.3156 11.3408 9.98744 11.0126C9.65925 10.6844 9.21413 10.5 8.75 10.5ZM15.25 10.5C14.7859 10.5 14.3408 10.6844 14.0126 11.0126C13.6844 11.3408 13.5 11.7859 13.5 12.25C13.5 12.7141 13.6844 13.1592 14.0126 13.4874C14.3408 13.8156 14.7859 14 15.25 14C15.7141 14 16.1592 13.8156 16.4874 13.4874C16.8156 13.1592 17 12.7141 17 12.25C17 11.7859 16.8156 11.3408 16.4874 11.0126C16.1592 10.6844 15.7141 10.5 15.25 10.5Z" fill="#586AEA"/>
+                </svg>
+                Discord
+              </button>
+            </div>
+            <div>
+              <div class="mb-4">
+                <div class="form-floating text-black">
+                  <input type="text" class="form-control rounded-3" id="account" placeholder="請輸入帳號" value="" required>
+                  <label class="text-black" for="account">帳號</label>
+                  <div class="invalid-feedback bg-pink">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                    </svg>
+                    請輸入帳號
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <div class="form-floating text-black">
+                  <input type="password" class="form-control rounded-3" id="password" placeholder="請輸入密碼" value="" required>
+                  <label class="text-black" for="password">密碼</label>
+                  <div class="invalid-feedback bg-pink">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                    </svg>
+                    請輸入密碼
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <div class="form-floating text-black">
+                  <input type="password" class="form-control rounded-3" id="password" placeholder="請輸入密碼" value="" required>
+                  <label class="text-black" for="password">密碼</label>
+                  <div class="invalid-feedback bg-pink">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                    </svg>
+                    請輸入密碼
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <div class="form-floating text-black">
+                  <input type="password" class="form-control rounded-3" id="password" placeholder="請輸入密碼" value="" required>
+                  <label class="text-black" for="password">確認密碼</label>
+                  <div class="invalid-feedback bg-pink">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                    </svg>
+                    請輸入重複密碼
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <input type="checkbox" name="agree" id="agree" required>
+                <label for="agree">我同意
+                  <a href="agreement.html">服務條款</a>
+                  和
+                  <a href="privacy.html">隱私政策</a>
+                </label>
+                <div class="invalid-feedback bg-pink">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 8.5C6.14167 8.5 6.26042 8.45208 6.35625 8.35625C6.45208 8.26042 6.5 8.14167 6.5 8C6.5 7.85833 6.45208 7.73958 6.35625 7.64375C6.26042 7.54792 6.14167 7.5 6 7.5C5.85833 7.5 5.73958 7.54792 5.64375 7.64375C5.54792 7.73958 5.5 7.85833 5.5 8C5.5 8.14167 5.54792 8.26042 5.64375 8.35625C5.73958 8.45208 5.85833 8.5 6 8.5ZM5.5 6.5H6.5V3.5H5.5V6.5ZM6 11C5.30833 11 4.65833 10.8688 4.05 10.6062C3.44167 10.3438 2.9125 9.9875 2.4625 9.5375C2.0125 9.0875 1.65625 8.55833 1.39375 7.95C1.13125 7.34167 1 6.69167 1 6C1 5.30833 1.13125 4.65833 1.39375 4.05C1.65625 3.44167 2.0125 2.9125 2.4625 2.4625C2.9125 2.0125 3.44167 1.65625 4.05 1.39375C4.65833 1.13125 5.30833 1 6 1C6.69167 1 7.34167 1.13125 7.95 1.39375C8.55833 1.65625 9.0875 2.0125 9.5375 2.4625C9.9875 2.9125 10.3438 3.44167 10.6062 4.05C10.8688 4.65833 11 5.30833 11 6C11 6.69167 10.8688 7.34167 10.6062 7.95C10.3438 8.55833 9.9875 9.0875 9.5375 9.5375C9.0875 9.9875 8.55833 10.3438 7.95 10.6062C7.34167 10.8688 6.69167 11 6 11ZM6 10C7.11667 10 8.0625 9.6125 8.8375 8.8375C9.6125 8.0625 10 7.11667 10 6C10 4.88333 9.6125 3.9375 8.8375 3.1625C8.0625 2.3875 7.11667 2 6 2C4.88333 2 3.9375 2.3875 3.1625 3.1625C2.3875 3.9375 2 4.88333 2 6C2 7.11667 2.3875 8.0625 3.1625 8.8375C3.9375 9.6125 4.88333 10 6 10Z" fill="#E61300"/>
+                  </svg>
+                  請勾選同意才可以送出哦!
+                </div>
+              </div>
+              <button type="submit" class="btn-black w-100 d-inline-flex align-items-center justify-content-center mb-9">
+                送出<span class="material-symbols-outlined ms-1">chevron_right</span>
+              </button>
+              <div class="text-center mb-9">
+                <a href="#" class="d-inline-block t-gray text-decoration-none ms-auto">
+                  已經會員？
+                </a>
+                <a href="#" class="d-inline-block text-primary ms-auto" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                  直接登入
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-7 pe-0 d-lg-block d-none">
+            <img src="/homeworkWeek5/assets/register-Cfh0nsYT.png" class="radius-rtb-16 login-h770 register-img" alt="register">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- 選單 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn-close m-6" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-6 d-flex flex-column justify-content-between">
+        <ul class="navbar-nav  mb-lg-0 mb-2 d-lg-flex d-block">
+          <li class="nav-item mb-6">
+            <a class="nav-link text-black text-center py-lg-2 py-4" aria-current="page" href="service.html">服務方案</a>
+          </li>
+          <li class="nav-item mb-6">
+            <a class="nav-link text-black text-center py-lg-2 py-4" href="about.html">關於職旅</a>
+          </li>
+          <li class="nav-item mb-6">
+            <a class="nav-link text-black text-center py-lg-2 py-4" href="contact.html">聯絡我們</a>
+          </li>
+        </ul>
+        <button type="button" class="d-block bg-secondary border border-gray w-100 py-2 rounded-4" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+          登入/註冊  
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  //登入/註冊
+  var exampleModal = document.getElementById('exampleModal')
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  var recipient = button.getAttribute('data-bs-whatever')
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+  var modalTitle = exampleModal.querySelector('.modal-title')
+  var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+  modalTitle.textContent = 'New message to ' + recipient
+  modalBodyInput.value = recipient
+})
+
+//驗證
+document.addEventListener('DOMContentLoaded', function () {
+  var forms = document.querySelectorAll('.needs-validation');
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+});
+
+//按下送出不要跳掉
+  if (!form.checkValidity()) {
+  event.preventDefault()
+  event.stopPropagation()
+}
+</script>
     <div class="gray-background">
       <div class="container">
         <div class="row py-lg-12 py-9">
