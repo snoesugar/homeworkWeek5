@@ -243,6 +243,7 @@
 <script>
   //登入/註冊
   var exampleModal = document.getElementById('exampleModal')
+if (exampleModal) {
 exampleModal.addEventListener('show.bs.modal', function (event) {
   // Button that triggered the modal
   var button = event.relatedTarget
@@ -258,25 +259,7 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   modalTitle.textContent = 'New message to ' + recipient
   modalBodyInput.value = recipient
 })
-
-//驗證
-document.addEventListener('DOMContentLoaded', function () {
-  var forms = document.querySelectorAll('.needs-validation');
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-});
-
-//按下送出不要跳掉
-  if (!form.checkValidity()) {
-  event.preventDefault()
-  event.stopPropagation()
 }
+
+
 </script>
