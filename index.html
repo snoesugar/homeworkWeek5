@@ -18,7 +18,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script type="module" crossorigin src="/homeworkWeek5/assets/main-B6sIPLE6.js"></script>
+    <script type="module" crossorigin src="/homeworkWeek5/assets/main-cfTKcE_v.js"></script>
     <link rel="stylesheet" crossorigin href="/homeworkWeek5/assets/main-DaydlXLi.css">
   </head>
   <body>
@@ -267,6 +267,7 @@
 <script>
   //登入/註冊
   var exampleModal = document.getElementById('exampleModal')
+if (exampleModal) {
 exampleModal.addEventListener('show.bs.modal', function (event) {
   // Button that triggered the modal
   var button = event.relatedTarget
@@ -282,21 +283,8 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   modalTitle.textContent = 'New message to ' + recipient
   modalBodyInput.value = recipient
 })
+}
 
-//驗證
-document.addEventListener('DOMContentLoaded', function () {
-  var forms = document.querySelectorAll('.needs-validation');
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-});
 
 </script>
   <!--第一張-->
