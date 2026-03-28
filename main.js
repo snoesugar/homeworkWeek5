@@ -16,11 +16,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+const blurFocusedElementInsideModal = (modal) => {
+  const activeElement = document.activeElement;
+  if (activeElement && modal.contains(activeElement)) {
+    activeElement.blur();
+    document.body.focus();
+  }
+};
+
+
 document.querySelectorAll('.modal').forEach((modal) => {
   modal.addEventListener('hide.bs.modal', () => {
-    const activeElement = document.activeElement;
-    if (activeElement && modal.contains(activeElement)) {
-      activeElement.blur();
-    }
+  blurFocusedElementInsideModal(modal);
   });
+
+  modal.addEventListener('hidden.bs.modal', () => {
+    blurFocusedElementInsideModal(modal);
+  });
+});
+
+document.addEventListener('click', (event) => {
+  const dismissButton = event.target.closest('[data-bs-dismiss="modal"]');
+  if (dismissButton instanceof HTMLElement) {
+    dismissButton.blur();
+  }
 });
