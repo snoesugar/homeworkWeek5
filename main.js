@@ -15,3 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }, false);
   });
 });
+
+document.querySelectorAll('.modal').forEach((modal) => {
+  modal.addEventListener('hide.bs.modal', () => {
+    const activeElement = document.activeElement;
+    if (activeElement && modal.contains(activeElement)) {
+      activeElement.blur();
+    }
+  });
+});
