@@ -1,48 +1,44 @@
-# 網頁切版直播班 Vite 範例
+# 🚀 WorkWay - 職涯轉型與自由工作者媒合平台
 
-## Node.js 版本
-  - 專案的 Node.js 版本需為 v18 以上
-  - 查看自己版本指令：`node -v`
+WorkWay 是一個以「工程思維」優化資訊架構的職涯探索平台，旨在陪伴求職者探索未完成的夢，並透過與經驗豐富的專家媒合，將職涯轉型中的迷惘轉化為可落實的行動引導。
 
+🔗 **[點此線上預覽成品](https://snoesugar.github.io/homeworkWeek5/)**
 
-## 指令列表
-- `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
-- `npm run dev` - 執行開發模式
-  - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入
-    `http://localhost:5173/<專案名稱>/pages/index.html`
-- `npm run build` - 執行編譯模式（不會開啟瀏覽器）
-- `npm run deploy` - 自動化部署
+---
 
-## 資料夾結構
-  - assets # 靜態資源放置處
-    - images # 圖片放置處
-    - scss # SCSS 的樣式放置處
+## 🎯 開發動機與產品核心
 
-  - layout # ejs 模板放置處
-  - pages # 頁面放置處
+自由工作很美，但也充滿挑戰。WorkWay 的誕生是為了解決職涯轉型與數位遊牧初期的迷惘與資訊不透明。
+* **專家陪伴**：匯集不同領域的實戰專家，提供 1 對 1 的深度導師服務。
+* **情感溫度**：不只是理論，更分享「過來人」面對挑戰的解決之道，建立具備信任感的專業顧問環境。
+* **資訊透明**：透過清晰的分類與專家背景展示，縮短求職者在尋找職涯夥伴時的摸索期。
 
-- JavaScript 程式碼可寫在 main.js 檔案
+---
 
-### 注意事項
-- 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
-- .gitignore 檔案是用來忽略掉不該上傳到 GitHub 的檔案（例如 node_modules），請不要移除 .gitignore
+## 🛠️ 技術亮點與互動實作
 
-## 開發模式的監聽
-vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使用 `Live Sass Compiler` 的 `Watch SCSS` 功能
+本專案重點展示了對於**進階網頁動效 (GSAP)** 與**系統化前端架構**的整合能力：
 
+### 1. 進階動態交互 (Advanced Animation)
+* **GSAP 沉浸式體驗**：運用 **GSAP** 核心技術，整合 **SplitText** 處理精緻的文字出現特效，大幅提升視覺張力。
+* **ScrollTrigger 滾動偵測**：結合 ScrollTrigger 打造隨視窗捲動觸發的卡片動畫，讓資訊呈現更具節奏感與專業度。
+* **AOS 套件整合**：輔以 AOS 處理基礎的捲動進入效果，確保頁面元素流暢銜接。
 
-## 部署 gh-pages 流程說明
-### Windows 版本
-1. 在 GitHub 建立一個新的 Repository
+### 2. 工程化架構設計 (Modular Architecture)
+* **EJS 樣板引擎**：實作組件化開發，將 Navbar、Footer 等重複元素進行模組化封裝，確保全站維護的一致性與開發效率。
+* **SASS 7-1 Pattern**：導入嚴謹的樣式組織規範，將變數與 Mixins 獨立管理，建立具備擴充性的 CSS 系統。
 
-2. 部署前請務必先將原始碼上傳到 GitHub Repository 也就是初始化 GitHub，因此通常第一步驟會在專案終端機輸入以下指令
-```cmd
-git init # 若已經初始化過就可以不用輸入
-git add .
-git commit -m 'first commit'
-git branch -M main
-git remote add origin [GitHub Repositories Url]
-git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
-```
+### 3. 表單互動與細節處理
+* **即時表單驗證**：在聯絡與諮詢頁面實作 **Bootstrap invalid-feedback** 驗證機制，提供使用者明確的填寫引導。
+* **DatePicker 整合**：提供直覺的日期選擇器，優化預約專家諮詢的使用者體驗（UX）。
+* **像素級精確切版**：確保複雜的動畫佈局與格線系統在各種行動裝置（RWD）上皆能穩定呈現。
 
-3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+---
+
+## 🚀 技術棧 (Tech Stack)
+
+* **Core:** HTML5, JavaScript (ES6+)
+* **Animation:** GSAP, ScrollTrigger, SplitText, AOS
+* **Template Engine:** EJS
+* **Styling:** SASS/SCSS (7-1 Pattern), Bootstrap 5
+* **Build Tool:** Vite
