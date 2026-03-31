@@ -2,7 +2,7 @@
 
 WorkWay 是一個以「工程思維」優化資訊架構的職涯探索平台，旨在陪伴求職者探索未完成的夢，並透過與經驗豐富的專家媒合，將職涯轉型中的迷惘轉化為可落實的行動引導。
 
-🔗 **[點此線上預覽成品](https://snoesugar.github.io/homeworkWeek5/)**
+🔗 **[點此線上預覽成品](https://snoesugar.github.io/WorkWay/)**
 
 ---
 
